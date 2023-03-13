@@ -4,78 +4,59 @@ const fs = require("fs");
 
 const tekst = [];
 const klucz = [];
-const alfabet = [
-  "a",
-  "b",
-  "c",
-  "d",
-  "e",
-  "f",
-  "g",
-  "h",
-  "i",
-  "j",
-  "k",
-  "l",
-  "m",
-  "n",
-  "o",
-  "p",
-  "q",
-  "r",
-  "s",
-  "t",
-  "u",
-  "v",
-  "w",
-  "x",
-  "y",
-  "z",
-];
-const liczby = alfabet.map((_, i) => i);
 
-const szyfr = "d"; //c a
-const odszyfrowywanie = "e"; //e d j k
+const szyfr = "c"; //c a
+const odszyfrowywanie = "d"; //e d j k
+const a = +klucz[1];
 
-switch (odszyfrowywanie) {
-  case "e":
-
-  case "d":
-
-  case "j":
-
-  case "k":
-
-  default:
-    console.log(
-      "Prosze wybrać czy odszyfrowujemy, szyfrujemy lub robimy to bez klucza."
-    );
+if (szyfr === "c" && odszyfrowywanie === "d") {
+  try {
+    const data = fs.readFileSync("crypto.txt", "utf8");
+    tekst.push(...data.split(""));
+    const data2 = fs.readFileSync("key.txt", "utf8");
+    klucz.push(...data2.split(" "));
+  } catch (err) {
+    console.error(err);
+  }
+  const przesuniecie = +klucz[0];
+  console.log(cezarOdszyfrowanie(tekst, przesuniecie));
+} else if (szyfr === "c" && odszyfrowywanie === "e") {
+  try {
+    const data = fs.readFileSync("plain.txt", "utf8");
+    tekst.push(...data.split(""));
+    const data2 = fs.readFileSync("key.txt", "utf8");
+    klucz.push(...data2.split(" "));
+  } catch (err) {
+    console.error(err);
+  }
+  const przesuniecie = +klucz[0];
+  console.log(cezarSzyfrowanie(tekst, przesuniecie));
 }
 
-switch (szyfr) {
-  case "a":
-
-  case "c":
-
-  default:
-    console.log("Prosze wybrac szyfrowanie: a (afiniczny) lub c (cezara).");
+function cezarSzyfrowanie(tekst, przesuniecie) {
+  const zaszyfrowane = tekst
+    .map((elem) =>
+      elem.charCodeAt(0) > 96 && elem.charCodeAt(0) < 123
+        ? ((elem.charCodeAt(0) - 97 + przesuniecie) % 26) + 97
+        : elem.charCodeAt(0) > 64 && elem.charCodeAt(0) < 91
+        ? ((elem.charCodeAt(0) - 65 + przesuniecie) % 26) + 65
+        : elem
+    )
+    .map((x) => (typeof x === "number" ? String.fromCharCode(x) : x))
+    .join("");
+  return zaszyfrowane;
 }
 
-try {
-  const data = fs.readFileSync("plain.txt", "utf8");
-  tekst.push(...data.split(""));
-  const data2 = fs.readFileSync("key.txt", "utf8");
-  klucz.push(...data2.split(" "));
-} catch (err) {
-  console.error(err);
+function cezarOdszyfrowanie(tekst, przesuniecie) {
+  const zaszyfrowane = tekst
+    .map((elem) =>
+      elem.charCodeAt(0) > 96 && elem.charCodeAt(0) < 123
+        ? ((elem.charCodeAt(0) - 97 - przesuniecie + 26) % 26) + 97
+        : elem.charCodeAt(0) > 64 && elem.charCodeAt(0) < 91
+        ? ((elem.charCodeAt(0) - 65 - przesuniecie + 26) % 26) + 65
+        : elem
+    )
+    .map((x) => (typeof x === "number" ? String.fromCharCode(x) : x))
+    .join("");
+  return zaszyfrowane;
 }
-
-const przesuniecie = klucz[0];
-const a = klucz[1];
-
-function cezarSzyfrowanie(tekst,przesuniecie) {
-  tekst.split("").map((elem,i,arr) => )
-}
-
-console.log(tekst);
-console.log(klucz);
