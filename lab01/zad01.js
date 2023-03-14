@@ -7,7 +7,7 @@ const klucz = [];
 const extra = [];
 
 const szyfr = "c"; //c a
-const odszyfrowywanie = "j"; //e d j k
+const odszyfrowywanie = "k"; //e d j k
 
 if (szyfr === "c" && odszyfrowywanie === "d") {
   try {
@@ -70,6 +70,22 @@ if (szyfr === "c" && odszyfrowywanie === "d") {
 
   try {
     fs.writeFileSync("key-found.txt", nowyKlucz);
+    console.log("Zapisano do pliku");
+  } catch (err) {
+    console.error(err);
+  }
+} else if (szyfr === "c" && odszyfrowywanie === "k") {
+  try {
+    const data = fs.readFileSync("crypto.txt", "utf8");
+    tekst.push(...data.split(""));
+  } catch (err) {
+    console.error(err);
+  }
+
+  const mozliwyTekst = cezarKryptoanaliza(tekst);
+
+  try {
+    fs.writeFileSync("decrypt.txt", mozliwyTekst);
     console.log("Zapisano do pliku");
   } catch (err) {
     console.error(err);
@@ -203,4 +219,13 @@ function cezarKryptoanalizaZTekstemJawnym(tekst, extra) {
     : (szyfrLiczba -= 65) && (extraLiczba -= 65);
   const nowyKlucz = (szyfrLiczba - extraLiczba + 26) % 26;
   return nowyKlucz;
+}
+
+function cezarKryptoanaliza(tekst) {
+  const decrypted = [];
+  for (let i = 1; i < 26; i++) {
+    const zaszyfrowane = cezarOdszyfrowanie(tekst, i);
+    decrypted.push(zaszyfrowane);
+  }
+  return decrypted.join("\n");
 }
