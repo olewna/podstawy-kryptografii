@@ -4,9 +4,10 @@ const fs = require("fs");
 
 const tekst = [];
 const klucz = [];
+const extra = [];
 
-const szyfr = "a"; //c a
-const odszyfrowywanie = "d"; //e d j k
+const szyfr = "c"; //c a
+const odszyfrowywanie = "j"; //e d j k
 
 if (szyfr === "c" && odszyfrowywanie === "d") {
   try {
@@ -19,13 +20,17 @@ if (szyfr === "c" && odszyfrowywanie === "d") {
   }
 
   const przesuniecie = +klucz[0];
-  const decrypted = cezarOdszyfrowanie(tekst, przesuniecie);
+  if (isNaN(przesuniecie)) {
+    console.log("Nieprawidłowy klucz! Podaj klucz w postaci liczby.");
+  } else {
+    const decrypted = cezarOdszyfrowanie(tekst, przesuniecie);
 
-  try {
-    fs.writeFileSync("decrypt.txt", decrypted);
-    console.log("Zapisano do pliku");
-  } catch (err) {
-    console.error(err);
+    try {
+      fs.writeFileSync("decrypt.txt", decrypted);
+      console.log("Zapisano do pliku");
+    } catch (err) {
+      console.error(err);
+    }
   }
 } else if (szyfr === "c" && odszyfrowywanie === "e") {
   try {
@@ -38,10 +43,33 @@ if (szyfr === "c" && odszyfrowywanie === "d") {
   }
 
   const przesuniecie = +klucz[0];
-  const crypto = cezarSzyfrowanie(tekst, przesuniecie);
+
+  if (isNaN(przesuniecie)) {
+    console.log("Nieprawidłowy klucz! Podaj klucz w postaci liczby.");
+  } else {
+    const crypto = cezarSzyfrowanie(tekst, przesuniecie);
+
+    try {
+      fs.writeFileSync("crypto.txt", crypto);
+      console.log("Zapisano do pliku");
+    } catch (err) {
+      console.error(err);
+    }
+  }
+} else if (szyfr === "c" && odszyfrowywanie === "j") {
+  try {
+    const data = fs.readFileSync("crypto.txt", "utf8");
+    tekst.push(...data.split(""));
+    const data2 = fs.readFileSync("extra.txt", "utf8");
+    extra.push(...data2.split(""));
+  } catch (err) {
+    console.error(err);
+  }
+
+  const nowyKlucz = cezarKryptoanalizaZTekstemJawnym(tekst, extra).toString();
 
   try {
-    fs.writeFileSync("crypto.txt", crypto);
+    fs.writeFileSync("key-found.txt", nowyKlucz);
     console.log("Zapisano do pliku");
   } catch (err) {
     console.error(err);
@@ -58,13 +86,17 @@ if (szyfr === "c" && odszyfrowywanie === "d") {
 
   const przesuniecie = +klucz[0];
   const a = +klucz[1];
-  const crypto = afinicznySzyfrowanie(tekst, a, przesuniecie);
+  if (isNaN(przesuniecie)) {
+    console.log("Nieprawidłowy klucz! Podaj klucz w postaci liczby.");
+  } else {
+    const crypto = afinicznySzyfrowanie(tekst, a, przesuniecie);
 
-  try {
-    fs.writeFileSync("crypto.txt", crypto);
-    console.log("Zapisano do pliku");
-  } catch (err) {
-    console.error(err);
+    try {
+      fs.writeFileSync("crypto.txt", crypto);
+      console.log("Zapisano do pliku");
+    } catch (err) {
+      console.error(err);
+    }
   }
 } else if (szyfr === "a" && odszyfrowywanie === "d") {
   try {
@@ -78,13 +110,17 @@ if (szyfr === "c" && odszyfrowywanie === "d") {
 
   const przesuniecie = +klucz[0];
   const a = +klucz[1];
-  const decrypted = afinicznyOdszyfrowanie(tekst, a, przesuniecie);
+  if (isNaN(przesuniecie)) {
+    console.log("Nieprawidłowy klucz! Podaj klucz w postaci liczby.");
+  } else {
+    const decrypted = afinicznyOdszyfrowanie(tekst, a, przesuniecie);
 
-  try {
-    fs.writeFileSync("decrypt.txt", decrypted);
-    console.log("Zapisano do pliku");
-  } catch (err) {
-    console.error(err);
+    try {
+      fs.writeFileSync("decrypt.txt", decrypted);
+      console.log("Zapisano do pliku");
+    } catch (err) {
+      console.error(err);
+    }
   }
 }
 
@@ -157,4 +193,14 @@ function modInverse(a, m) {
     }
   }
   return -1;
+}
+
+function cezarKryptoanalizaZTekstemJawnym(tekst, extra) {
+  let szyfrLiczba = tekst[0].charCodeAt(0);
+  let extraLiczba = extra[0].charCodeAt(0);
+  szyfrLiczba > 96 && szyfrLiczba < 123
+    ? (szyfrLiczba -= 97) && (extraLiczba -= 97)
+    : (szyfrLiczba -= 65) && (extraLiczba -= 65);
+  const nowyKlucz = (szyfrLiczba - extraLiczba + 26) % 26;
+  return nowyKlucz;
 }
