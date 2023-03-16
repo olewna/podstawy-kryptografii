@@ -77,10 +77,11 @@ if (szyfr === "c" && odszyfrowywanie === "d") {
     console.error(err);
   }
 
-  const nowyKlucz = cezarKryptoanalizaZTekstemJawnym(tekst, extra).toString();
+  const wynik = cezarKryptoanalizaZTekstemJawnym(tekst, extra);
 
   try {
-    fs.writeFileSync("key-found.txt", nowyKlucz);
+    fs.writeFileSync("key-found.txt", wynik[0]);
+    fs.writeFileSync("decrypt.txt", wynik[1]);
     console.log("Zapisano do pliku");
   } catch (err) {
     console.error(err);
@@ -224,7 +225,7 @@ function cezarKryptoanalizaZTekstemJawnym(tekst, extra) {
     ? (szyfrLiczba -= 97) && (extraLiczba -= 97)
     : (szyfrLiczba -= 65) && (extraLiczba -= 65);
   const nowyKlucz = (szyfrLiczba - extraLiczba + 26) % 26;
-  return nowyKlucz;
+  return [nowyKlucz, cezarOdszyfrowanie(tekst, nowyKlucz)];
 }
 
 function cezarKryptoanaliza(tekst) {
