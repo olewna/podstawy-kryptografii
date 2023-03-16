@@ -1,13 +1,23 @@
 "use strict";
 //autor: Oskar Lewna
+
 const fs = require("fs");
+const prompt = require("prompt-sync")({ sigint: true });
+
+const szyfr = prompt("Wybierz szyfr: c - szyfr cezara, a - szyfr afiniczny: ");
+
+if (szyfr !== "c" && szyfr !== "a") {
+  console.log("Prosze podać dobrą opcję (c lub a).");
+  process.exit(0);
+}
+
+const odszyfrowywanie = prompt(
+  "Wybierz opcję: d - odszyfrowanie, e - szyfrowanie, j - kryptoanaliza z tekstem jawnym, k - kryptoanaliza: "
+);
 
 const tekst = [];
 const klucz = [];
 const extra = [];
-
-const szyfr = "a"; //c a
-const odszyfrowywanie = "j"; //e d j k
 
 if (szyfr === "c" && odszyfrowywanie === "d") {
   try {
@@ -20,6 +30,7 @@ if (szyfr === "c" && odszyfrowywanie === "d") {
   }
 
   const przesuniecie = +klucz[0];
+
   if (isNaN(przesuniecie)) {
     console.log("Nieprawidłowy klucz! Podaj klucz w postaci liczby.");
   } else {
@@ -173,6 +184,9 @@ if (szyfr === "c" && odszyfrowywanie === "d") {
   } catch (err) {
     console.error(err);
   }
+} else {
+  console.log("Proszę podać dobrą opcję (e,d,j,k).");
+  process.exit(0);
 }
 
 function cezarSzyfrowanie(tekst, przesuniecie) {
