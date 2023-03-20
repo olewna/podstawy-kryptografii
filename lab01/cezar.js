@@ -283,7 +283,7 @@ function afinicznyKryptoanalizaZTekstem(tekst, extra) {
               ((a * (extra[i].charCodeAt(0) - 97) + b) % 26) + 97 ===
               tekst[i].charCodeAt(0)
             ) {
-              mozliweKlucze.push([a, b]);
+              mozliweKlucze.push([b, a]);
             }
           } else if (
             extra[i].charCodeAt(0) > 64 &&
@@ -293,7 +293,7 @@ function afinicznyKryptoanalizaZTekstem(tekst, extra) {
               ((a * (extra[i].charCodeAt(0) - 65) + b) % 26) + 65 ===
               tekst[i].charCodeAt(0)
             ) {
-              mozliweKlucze.push([a, b]);
+              mozliweKlucze.push([b, a]);
             }
           }
         }
