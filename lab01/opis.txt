@@ -1,0 +1,6 @@
+Autor: Oskar Lewna
+
+Przed uruchomieniem pliku cezar.js należy wpisać komendę "npm install".
+
+Uruchamianie pliku wygląda następująco:
+"node cezar.js (flaga -a lub -c) (flaga -e, -d, -k, -j)"

@@ -2,18 +2,39 @@
 //autor: Oskar Lewna
 
 const fs = require("fs");
-const prompt = require("prompt-sync")({ sigint: true });
 
-const szyfr = prompt("Wybierz szyfr: c - szyfr cezara, a - szyfr afiniczny: ");
+let szyfr;
+let odszyfrowywanie;
 
-if (szyfr !== "c" && szyfr !== "a") {
-  console.log("Prosze podać dobrą opcję (c lub a).");
-  process.exit(0);
+switch (process.argv[2]) {
+  case "-c":
+    szyfr = "c";
+    break;
+  case "-a":
+    szyfr = "a";
+    break;
+  default:
+    console.log("Podano złą opcje.");
+    process.exit(0);
 }
 
-const odszyfrowywanie = prompt(
-  "Wybierz opcję: d - odszyfrowanie, e - szyfrowanie, j - kryptoanaliza z tekstem jawnym, k - kryptoanaliza: "
-);
+switch (process.argv[3]) {
+  case "-d":
+    odszyfrowywanie = "d";
+    break;
+  case "-e":
+    odszyfrowywanie = "e";
+    break;
+  case "-j":
+    odszyfrowywanie = "j";
+    break;
+  case "-k":
+    odszyfrowywanie = "k";
+    break;
+  default:
+    console.log("Podano złą opcje.");
+    process.exit(0);
+}
 
 const tekst = [];
 const klucz = [];
