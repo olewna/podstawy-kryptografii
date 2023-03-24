@@ -11,8 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "eslint": "^8.35.0",
-    "fs": "^0.0.1-security",
-    "nodemon": "^2.0.21",
-    "prompt-sync": "^4.2.0"
+    "fs": "^0.0.1-security"
   }
 }

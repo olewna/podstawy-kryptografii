@@ -1,0 +1,15 @@
+{
+  "name": "lab02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "xor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^8.36.0",
+    "fs": "^0.0.1-security"
+  }
+}
