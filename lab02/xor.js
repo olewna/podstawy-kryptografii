@@ -102,6 +102,55 @@ const encryption = () => {
   }
 };
 
+const cryptoanalysis = () => {
+  const encrypted = [];
+  const key = Array(64).fill("$", 0);
+  const decrypted = [];
+
+  try {
+    const data = fs.readFileSync("crypto.txt", "utf-8");
+    data.split(/\r?\n/).forEach((line) => {
+      encrypted.push(line);
+    });
+  } catch (err) {
+    console.log(err);
+  }
+
+  for (let i = 0; i < encrypted.length; i++) {
+    for (let j = 0; j < encrypted[i].length; j += 8) {
+      if (
+        encrypted[i][j] === "0" &&
+        encrypted[i][j + 1] === "1" &&
+        encrypted[i][j + 2] === "0"
+      ) {
+        key[Math.floor(j / 8)] = String.fromCharCode(
+          parseInt(encrypted[i].slice(j, j + 8), 2) ^ 32
+        );
+      }
+    }
+  }
+
+  const foundKey = key.join("");
+
+  for (let i = 0; i < encrypted.length; i++) {
+    for (let j = 0; j < encrypted[i].length; j += 8) {
+      decrypted.push(
+        String.fromCharCode(
+          parseInt(encrypted[i].slice(j, j + 8), 2) ^ key[j / 8].charCodeAt(0)
+        )
+      );
+    }
+  }
+
+  try {
+    fs.writeFileSync("decrypt.txt", decrypted.join(""));
+    fs.writeFileSync("newKey.txt", foundKey);
+    console.log("Zapisano do pliku");
+  } catch (err) {
+    console.error(err);
+  }
+};
+
 switch (process.argv[2]) {
   case "-p":
     preparingText();
@@ -111,6 +160,7 @@ switch (process.argv[2]) {
     break;
   case "-k":
     console.log("Opcja -k");
+    cryptoanalysis();
     break;
   default:
     console.log("Proszę wybrać odpowienią opcję.");

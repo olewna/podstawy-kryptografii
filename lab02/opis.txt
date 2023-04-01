@@ -1,6 +1,6 @@
 Autor: Oskar Lewna
 
-Przed uruchomieniem pliku cezar.js należy wpisać komendę "npm install".
+Przed uruchomieniem pliku xor.js należy wpisać komendę "npm install".
 
 Uruchamianie pliku wygląda następująco:
 "node xor.js (flaga -p -e -k)"
