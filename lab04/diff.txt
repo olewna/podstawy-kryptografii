@@ -1,0 +1,35 @@
+openssl_md5:
+8b2f67a6a680c30960970435065abfa5
+a013eb839d1a1e79525a8238fdca1056
+Liczba rozniacych sie bitow: 67 z 128, procentowo: 52%.
+
+openssl_sha1:
+d86e30fa5ad0a01ffbd156b97fd52a2ffdd29f48
+ac178ed099a55d3c1ce9bd0058cc3479f70d32dc
+Liczba rozniacych sie bitow: 89 z 160, procentowo: 56%.
+
+openssl_sha224:
+be5e96da1c85df618bc8c8f786b87ad0f3b7064f5b79f1d89f5130a1
+f796aee274c79d0ffdb52679801221a3482ce5e541b83db2d0d82dae
+Liczba rozniacych sie bitow: 111 z 224, procentowo: 50%.
+
+openssl_sha256:
+f8e76112c1714b1ce0c1a177d3fc8042466baf58f37cc7d6cd7e87e6b4ebad28
+f214e1fb7ed45d0338c7188f9d02f7b72b77816d16065ec5a2e8c4bfd658830e
+Liczba rozniacych sie bitow: 137 z 256, procentowo: 54%.
+
+openssl_sha384:
+109a5a28801bf1c985727790205c76438ea07e47558c68606f0ccd5f7cebe434d5aac5f29959b4f193432e70acf1b1d7
+c63f71e74b9be0a4e33f28bf98f51f9f838f2c456e5b1dfa096c99db6d54e1007d2aa7edc7eaa148acc34f5d69a993a5
+Liczba rozniacych sie bitow: 180 z 384, procentowo: 47%.
+
+openssl_sha512:
+c1cc99c032a4babd7a776c7d217d233627ef6a5c45bc3c44294f7bfb1b4f2cea5cc7db316f9ef307e1b49d85002057181ee2912283a2b823f5f0dbdcc0ff4271
+8fbb6e056c3804c8b81475c57a5a377e7777b0e7c0d1a31cd3eee43ed7788d6fbfa4fbb49de91afec11e445ce3d326f816e62b42811703caa7aff65048b0d9a1
+Liczba rozniacych sie bitow: 260 z 512, procentowo: 51%.
+
+blake2b:
+e5ed123154d5b61214383956e2931196ddd763d3a5d4d09ceccd8decd0337e1f05d40cecaa9c3c71985d7f8cb3b6c9308fa881896599c1efc07b9a15a9a30e86
+1e4f4e567f53c854fde9f341b5a2ea4510b06228e242f12f61fffe74fa8208d8bf180eecab7a3a587063c32bc34601ec796fe08a36bff1d5ecf79ec33de40413
+Liczba rozniacych sie bitow: 258 z 512, procentowo: 50%.
+
