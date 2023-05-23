@@ -12,22 +12,23 @@ hexa_ = []
 results = []
 results_ = []
 
-with open('personal.txt', 'rb') as f_in1,open('personal_.txt', 'rb') as f_in2, open('diff.txt', 'a') as f_out:
+with open('personal.txt', 'rb') as f_in1, open('personal_.txt', 'rb') as f_in2, open("hash-.pdf", "rb") as f_in3, open('diff.txt', 'a') as f_out:
     data = f_in1.read()
     data_ = f_in2.read()
+    hash_ = f_in3.read()
 
     for func in hash_functions:
-        h = func(data).hexdigest()
-        h_ = func(data_).hexdigest()
+        h = func(hash_ + data).hexdigest()
+        h_ = func(hash_ + data_).hexdigest()
         hexa.append(h)
         hexa_.append(h_)
         res = format(int(h,16), '0>42b')
         res_ = format(int(h_,16), '0>42b')
 
         if (len(res) > len(res_)):
-            res_ += "0" * (len(res)-len(res_))
+            res_ += "2" * (len(res)-len(res_))
         else:
-            res += "0" * (len(res_)-len(res))
+            res += "2" * (len(res_)-len(res))
 
         results.append(res)
         results_.append(res_)
