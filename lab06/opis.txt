@@ -1,0 +1,13 @@
+Autor Oskar Lewna 278779
+
+Program wywołujemy za pomocą polecenia: "python stegano.py flaga1 flaga2" gdzie flaga1 to:
+
+-e - zanurzanie wiadomości
+-d - wydobywanie wiadomości
+
+flaga2 to opcje o numerach -1, -2, -3 i -4 będą oznaczać przyjęty algorytm zanurzania wiadomości.
+
+-1 - każdy bit ukrywanej wiadomości będzie przekazywany jako dodatkowa spacja na końcu każdego wiersza, ukrywana wiadomość może mieć najwyżej tyle bitów ile wierszy w nośniku.
+-2 - każdy bit ukrywanej wiadomości będzie ukrywany jako pojedyncza lub podwójna spacja. Znaki tabulacji można pozostawić bez zmian. Ukrywana wiadomość może być co najwyżej długości równej liczbie spacji bez powtórzeń w nośniku.
+-3 - bity ukrywanej wiadomości będą przekazywane jako fałszywe literówki w nazwach atrybutów. Np. można w każdym znaczniku akapitu bez podanej wysokości czy marginesu dodać te atrybuty: <p style="margin-bottom: 0cm; line-height: 100%"> i wprowadzać błędną nazwę, np. margin-botom lub lineheight. Wówczas wiadomość jest ukrywana w wystąpieniach tych atrybutów, 0 jako prawidłowa nazwa a 1 jako błędna.
+-4 - bity ukrywanej wiadomości będą kodowane jako niepotrzebne sekwencje otwierające i zamykające znaczniki, np. zmiany fontu. W tej opcji program będzie poszukiwał wystąpień znacznika FONT i bit 1 wiadomości spowoduje, że otwarcie znacznika zostanie zastąpione sekwencją otwarcie-zamknięcie-otwarcie tego znacznika a bit 0 przeciwnie, po zamknięciu będzie doklejona jeszcze jedna pusta para. Wiadomość ukrywana nie może w tej wersji mieć więcej bitów niż wystąpień tego znacznika w nośniku.

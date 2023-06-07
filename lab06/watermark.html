@@ -1,0 +1,2295 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Aleksandra Tejszerska">
+  <title>Aleksandra Tejszerska</title>
+
+  <link rel="stylesheet" href="assets/styles/all.min.css">
+  <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/styles/mdb.min.css">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="stylesheet" href="assets/styles/style_4k.css">
+  <script src="assets/scripts/jquery.min.js"></script>
+  <script src="assets/scripts/bootstrap.min.js"></script>
+  <script src="assets/scripts/mdb.min.js"></script>
+  <script src="assets/scripts/scripts.js"></script>
+  <script>
+    $(window).on("load", function() {
+      $(".se-pre-con").fadeOut("slow");
+    });
+  </script>
+</head>
+
+<body>
+    <font>xxxxxxxxx</font><font></font>
+    <font>xxxxxxxxx</font><font></font>
+    <font></font><font>xxxxxxxxx</font>
+    <font></font><font>xxxxxxxxx</font>
+    <font></font><font>xxxxxxxxx</font>
+    <font>xxxxxxxxx</font><font></font>
+    <font></font><font>xxxxxxxxx</font>
+    <font>xxxxxxxxx</font><font></font>
+    <font></font><font>xxxxxxxxx</font>
+  <div class="se-pre-con" id="loaders">
+    <div class="all-center">
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <aside class="col-md-3 col-xl-2">
+        <nav class="navbar navbar-expand-md navbar-dark">
+  <header>
+    <h4>
+      <span class="firstName desktop">Aleksandra</span>
+      <span class="firstName mobile">A.</span>
+      Tejszerska
+    </h4>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </header>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+    <font></font><font>xxxxxxxxx</font>
+    <font>xxxxxxxxx</font><font></font>
+    <font></font><font>xxxxxxxxx</font>
+    <font></font><font>xxxxxxxxx</font>
+    <font></font><font>xxxxxxxxx</font>
+    <font></font><font>xxxxxxxxx</font>
+    <font>xxxxxxxxx</font><font></font>
+    <font>xxxxxxxxx</font><font></font>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.php">Kontakt</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="schedule.php">Plan zajęć</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="dydaktyka.php">Dydaktyka</a>
+      </li>
+    </ul>
+  </div>
+
+</nav>      </aside>
+      <div id="main" class="main col-md-9 col-xl-10">
+        <div id="contentMain" class="content">
+<h3 class="mb-5">Języki programowania II (gr. 1)</h3>
+
+
+<div>
+    <font></font><font>xxxxxxxxx</font>
+    <font></font><font>xxxxxxxxx</font>
+    <font>xxxxxxxxx</font><font></font>
+    <font></font><font>xxxxxxxxx</font>
+  <div class="mb-5 main-text">
+    <div class="card-info">
+      <div class="header">
+        <h5>Zasady zaliczenia laboratorium</h5>
+      </div>
+      <div class="body">
+        <p>Na ocenę laboratorium składają się:</p>
+        <ul>
+          <li>dwa kolokwia</li>
+          <li>ewentualne sprawdziany / niezapowiedziane kartkówki</li>
+        </ul>
+        <p>Skala ocen według regulaminu studiów, zaliczenie od 51%.</p>
+        <p>Oba kolokwia powinny być napisane na co najmniej ocenę dostateczną. Ewentualne poprawy odbędą się pod koniec semestru i&nbsp;będzie można poprawić tylko jedno z kolokwiów. Warunkiem przystąpienia do poprawy jest regularna praca w trakcie trwania semestru.</p>
+      </div>
+    </div>
+  </div>
+
+  <h4 class="mb-4">Zadania na laboratoria</h4>
+
+  <div class="note note-primary mb-3">
+    Jeżeli ktoś chciałby komentarz do jakiegokolwiek swojego rozwiązania, to prosiłabym o&nbsp;<a href="https://docs.gitlab.com/ee/user/project/merge_requests/">tworzenie PR-ów</a> i oznaczanie mnie. W&nbsp;tym celu najlepiej wypracować sobie tzw. "git flow" i&nbsp;pracowanie na branchach (np. każde laboratoria, to nowy branch). W&nbsp;przypadku już wrzuconych rozwiązań można tworzyć issue (i&nbsp;oznaczanie mnie tj. assignees). W&nbsp;przeciwnym wypadku maila "o&nbsp;ruchu na repozytorium" dostaną wszystkie osoby dodane do projektu. W&nbsp;opisie PR-a / issue prosiłabym umieszczać informację o&nbsp;jakie zadanie/a (laboratoria) chodzi.
+  </div>
+
+  <div class="accordion mb-4" id="jp2">
+    <div class="card">
+      <div class="card-header" id="Lab1">
+        <button class="collapsed btn btn-link" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="contentLab1" data-target="#contentLab1">
+          <h6 class="mb-0">
+            Laboratorium 1 &ndash; Hello world! <i class="fas fa-angle-down rotate-icon"></i>
+          </h6>
+        </button>
+      </div>
+      <div id="contentLab1" class="collapse" aria-labelledby="Lab1">
+        <div class="card-body">
+          
+<div>
+  <p><strong>Narzędzia używane na zajęciach, środowisko pracy</strong></p>
+  <ol>
+    <li><a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">Git</a></li>
+    <li><a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">Node.js</a> (wersja LTS)</li>
+    <li><a href="https://classic.yarnpkg.com/lang/en/docs/install/" target="_blank" rel="noopener noreferrer">Yarn</a></li>
+  </ol>
+  <p><strong>Przydatne polecenia</strong></p>
+  <pre>
+<span class="c">// Sprawdzenie wersji node i npm:</span>
+node -v
+npm -v</pre>
+</div>
+<hr>
+
+<div class="lab-content">
+  <ol>
+    <li>
+      Stwórz plik <code>helloWorld.js</code> i&nbsp;uzupełnij go tak, aby w konsoli został wypisany tekst "Hello world!" po uruchomieniu skryptu poleceniem <pre>node helloWorld.js</pre>
+    </li>
+    <li>
+      Do zmiennej przypisz dowolną liczbę. Następnie stwórz warunek sprawdzający:
+      <ol>
+        <li>czy podana liczba jest dodatnia. W&nbsp;zależności od rezultatu wypisz w&nbsp;konsoli odpowiedni komunikat "Liczba jest dodatnia/ujemna"</li>
+        <li>czy liczba jest parzysta. W zależności od rezultatu, podobnie jak poprzednio, wypisz odpowiedni komunikat</li>
+      </ol>
+      Rozwiązanie umieść w pliku <code>zad_02.js</code>.
+    </li>
+    <li>
+      Stwórz tablicę zawierającą kilka/kilkanaście różnych liczb - dodatnich i&nbsp;ujemnych, którą przypiszesz do odpowiedniej zmiennej. Następnie:
+      <ol>
+        <li>wypisz jej wszystkie wartości za pomocą pętli <code>for</code></li>
+        <li>wypisz najmniejszą i największą wartość w&nbsp;tablicy</li>
+        <li>odwróć ją, aby pierwsza wartość była ostatnią, a ostatnia pierwszą</li>
+      </ol>
+      Rozwiązanie umieść w pliku <code>zad_03.js</code>.
+    </li>
+    <li>
+      W pliku <code>zad_04.js</code> utwórz tablicę 3-elementową, zawierającą 3 liczby dodatnie. Sprawdź, czy wartości w tablicy spełniają podany warunek, a następnie, czy z podanych wartości możesz zbudować trójkąt. W zależności od rezultatu wypisz w&nbsp;konsoli odpowiedni komunikat.
+    </li>
+    <li>
+      Stwórz podstawowy szkielet strony, a następnie podłącz do niego napisane w poprzednich zadaniach (1-4) skrypty. Sprawdź, czy wynik wypisany w&nbsp;konsoli będzie wyglądał w taki sam sposób? Gdzie szukać wyniku działania programu? Odpowiedź zapisz w komentarzu pliku html.
+    </li>
+    <li>
+      Stwórz tablicę zawierają dane różnego typu tj. liczby, wyrazy i wartości logiczne (boolean). Następnie iterując po tablicy dla każdej z wartości wypisz ją oraz jej typ (<code>typeof</code>).
+      <pre>
+<span class="c">// Przykładowy output:</span>
+5 =&gt; liczba
+true =&gt; boolean
+"Ala" =&gt; tekst</pre>
+    </li>
+    <li>
+      Przypisz do nowej zmiennej tablicę liczb np. <pre>[1, 5, 6, 5, 5, 1, 5]</pre> Następnie wypisz częstotliwość występowania każdego elementu z tablicy. Zwróć uwagę na prawidłową odmianę "2&nbsp;razy", ale "1&nbsp;raz".
+      <pre>
+<span class="c">// Output:</span>
+1 występuje 2 razy
+5 występuje 4 razy
+6 występuje 1 raz
+5 występuje 4 razy
+5 występuje 4 razy
+1 występuje 2 razy
+5 występuje 4 razy</pre>
+      Spróbuj zmodyfikować swoje rozwiązanie tak, aby konkretne wartości i ich częstotliwość były wpisane tylko raz.
+    </li>
+  </ol>
+</div>        </div>
+      </div>
+    </div>
+    <div class="card">
+        <font>xxxxxxxxx</font><font></font>
+        <font>xxxxxxxxx</font><font></font>
+        <font>xxxxxxxxx</font><font></font>
+        <font></font><font>xxxxxxxxx</font>
+        <font>xxxxxxxxx</font><font></font>
+      <div class="card-header" id="Lab2">
+        <button class="collapsed btn btn-link" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="contentLab2" data-target="#contentLab2">
+          <h6 class="mb-0">
+            Laboratorium 2 &ndash; Tablice i obiekty<i class="fas fa-angle-down rotate-icon"></i>
+          </h6>
+        </button>
+      </div>
+      <div id="contentLab2" class="collapse" aria-labelledby="Lab2">
+        <div class="card-body">
+            <div class="lab-content">
+  <p>
+    Na górze każdego tworzonego skryptu dodaj: <pre>'use strict';</pre>
+  </p>
+  <hr>
+  <ol>
+    <li>
+      Dana jest tablica <pre>const numbers = [4, 3, 5, 1, 3, 2, 21, 1, 65, -43, 9];</pre> Znajdź i wybierz wszystkie unikatowe elementy z tablicy <code>numbers</code>. Wynik umieść w tablicy (<strong>nie</strong> używaj funkcji wbudowanych).
+    </li>
+    <li>
+      Znajdź wszystkie liczby w&nbsp;poniższej tablicy i umieść je na jej początku. <pre>const array = [ 4, 2, 'a', 'b', 3, 'aa', 'ww', 2, 'ab', -2];</pre>
+    </li>
+    <li>
+      Napisz kod, który "spłaszcza" tablicę wielowymiarową. Przykładowo "spłaszczenie" tablicy:
+      <pre>const testArray = [1, 2, null, [4, undefined, 11, 10], 6, [7, null, 0], null, 9]; </pre>
+      Powinno dać rezulat: <pre>[1, 2, null, 4, undefined, 11, 10, 6, 7, null, 0, null, 9]</pre>
+    </li>
+    <li>
+      Podany jest obiekt
+      <pre>
+const cat = { 
+  name: 'Filemon', 
+  age: 6 
+}</pre>
+      Wypisz w konsoli imię i wiek kota w&nbsp;formacie: <pre>Kot ma na imię Filemon i ma 6 lat.</pre>
+    </li>
+    <li>
+      Stworzony we wcześniejszym zadaniu komunikat przypisz do nowego pola <code>description</code> obiektu <code>cat</code>, a następnie wyświetl w konsoli informacje o kocie odwołując się do stworzonego przed chwilą pola.
+    </li>
+    <li>
+      Do obiektu <code>cat</code> dodaj dwa kolejne pola: <code>breed</code> (rasa) i <code>colour</code> (kolor sierści). Nadaj tym polom dowolne wartości i uzupełnij komunikat z pola <code>description</code> o&nbsp;nowe dane. <br/>
+      <strong>Uwaga!</strong> Aktualizując zawartość <code>description</code> postaraj się dodać nową treść do istniejącej, a nie zastępując starą treść nową. 
+    </li>
+    <li>
+      Stwórz 4 obiekty <code>person1</code>, <code>person2</code>, <code>person3</code> i <code>person4</code>, gdzie każdy z&nbsp;nich zawiera dwa pola: 
+      <ul>
+        <li>name</li>
+        <li>age</li>
+      </ul>
+      przyjmujące wartości kolejno:
+      <ol>
+        <li>Agata, 21</li>
+        <li>Tomasz, 25</li>
+        <li>Alicja, 31</li>
+        <li>Jan, 20</li>
+      </ol>
+      Stwórz tablicę i dodaj do niej wszystkie stworzone osoby. Następnie stwórz pętle, w&nbsp;której obliczysz:
+      <ul>
+        <li>ile łącznie lat mają wspomniane osoby</li>
+        <li>średnią wieku</li>
+      </ul>
+    </li>
+    <li>
+      Operując na tablicy obiektów z&nbsp;poprzedniego zadania stwórz dwie tablice zawierające tylko imiona osób, których wiek jest poniżej i powyżej wyliczonej średniej wieku.
+    </li>
+  </ol>
+</div>        </div>
+      </div>
+    </div>
+    <div class="card">
+        <font></font><font>xxxxxxxxx</font>
+        <font></font><font>xxxxxxxxx</font>
+        <font>xxxxxxxxx</font><font></font>
+        <font>xxxxxxxxx</font><font></font>
+        <font>xxxxxxxxx</font><font></font>
+        <font></font><font>xxxxxxxxx</font>
+        <font>xxxxxxxxx</font><font></font>
+        <font>xxxxxxxxx</font><font></font>
+        <font>xxxxxxxxx</font><font></font>
+        <font>xxxxxxxxx</font><font></font>
+        <font>xxxxxxxxx</font><font></font>
+        <font>xxxxxxxxx</font><font></font>
+      <div class="card-header" id="Lab3">
+        <button class="collapsed btn btn-link" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="contentLab3" data-target="#contentLab3">
+          <h6 class="mb-0">
+            Laboratorium 3 &ndash; Funkcje i funkcje wbudowane<i class="fas fa-angle-down rotate-icon"></i>
+          </h6>
+        </button>
+      </div>
+      <div id="contentLab3" class="collapse" aria-labelledby="Lab3">
+        <div class="card-body">
+            <div class="lab-content">
+  <p>
+    Na górze każdego tworzonego skryptu dodaj: <pre>'use strict';</pre>
+  </p>
+  <hr>
+  <ol>
+    <li>
+      Pobierz plik <a href="jp2/files/lab03/zad_01.js" download="zad_01.js"><code>zad_01.js</code></a> i&nbsp;odpowiedz na zawarte w nim pytania. Odpowiedzi zapisz w&nbsp;komentarzu, a&nbsp;następnie plik wrzuć do repozytorium.
+    </li>
+    <li>
+      Uzupełnij poniżej podaną funkcję tak, aby sprawdzała czy podana w&nbsp;argumencie liczba jest większa od zera i&nbsp;czy jest parzysta.
+      <pre>
+function isPositiveEven(number) {
+
+}</pre>
+    </li>
+    <li>
+      Napisz funkcję, która przyjmuje dwa parametry i zwraca spłaszczoną tablicę zawierającą przekazane wartości. Przekazane parametry mogą mieć dowolny (różny) typ np. być liczbą, tekstem lub tablicą.
+      <pre>
+toArray(1, 2) <span class="c">=&gt; [1, 2]</span>
+toArray(1, "tekst") <span class="c">=&gt; [1, "tekst"]</span>
+toArray("aa", [1, 2]) <span class="c">=&gt; ["aa", 1, 2]</span>
+toArray([1], null) <span class="c">=&gt; [1, null]</span></pre>
+    </li>
+    <li>
+      Napisz funkcję, która sprawdza 3 zmienne zarówno pod względem wartości, jak i równości typów. Funkcja powinna zwracać <code>true</code>, jeśli wszystkie parametry są <strong>nierówne</strong> wartościowo i&nbsp;typowo. W przeciwnym wypadku zwraca <code>false</code>. Funkcja <code>unequal(1,2,3)</code> powinna zwrócić <code>true</code>, a <code>unequal(1,1,2)</code> zwraca <code>false</code>. <br/>
+      W razie niejasności, która może wynikać z&nbsp;trudności przetłumaczenia 'strict equality' na j. polski &ndash; "The function should return true if all three parameters are strict unequal".
+    </li>
+    <li>
+      Napisz funkcję przyjmującą liczbę, a zwracającą tablicę "połówek" przyjętej liczby. Jeśli przyjęta liczba jest nieparzysta, to w zwracanej tablicy większa liczba powinna być z prawej strony.
+      <pre>
+numberSplit(4) <span class="c">=&gt; [2, 2]</span>
+numberSplit(11) <span class="c">=&gt; [5, 6]</span>
+numberSplit(-9) <span class="c">=&gt; [-5, -4]</span></pre>
+    </li>
+    <li>
+      Napisz funkcję, która sprawdza, czy w przekazanej tablicy liczb jest jakakolwiek wartość parzysta (użyj funkcji wbudowanej: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some" target="_blank" rel="noopener noreferrer"><code>some()</code></a>)
+      <pre>
+isAnyEven([1, 4, 5, 3]) <span class="c">=&gt; true</span>
+isAnyEven([1, 3, 5, 3]) <span class="c">=&gt; false</span></pre>
+    </li>
+    <li>
+      Napisz funkcję, która zwraca posortowaną tablicę przyjętą w parametrze. Funkcja powinna sortować słowa według ich długości, jeżeli słowa mają taką samą długość - alfabetycznie (użyj funkcji wbudowanej: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort" target="_blank" rel="noopener noreferrer"><code>sort()</code></a>)
+<pre>
+sortWords(['pies', 'kot', 'chomik', 'królik', 'wiewiórka']) <span class="c">=&gt; ['kot', 'pies', 'chomik', 'królik', 'wiewiórka']</span></pre>
+    </li>
+    <li>
+      Mamy tablicę obiektów 
+<pre>
+const persons = [
+  { name: 'Jan', age: 22 },
+  { name: 'Grzegorz', age: 19 },
+  { name: 'Halina', age: null },
+  { name: 'Agata', age: 24 },
+  { name: 'Krzysztof', age: 40 },
+  { name: 'Adam', age: 29 }
+]
+</pre>
+      Napisz funkcję, która wyfiltruje z powyższej tablicy obiektów (tablica powinna być przekazana do funkcji w argumencie) tylko osoby mające podany wiek, a następnie zwróci tablice imion (stringów) posortowaną od najmłodszej do najstarszej osoby (użyj funkcji wbudowanej: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter" target="_blank" rel="noopener noreferrer"><code>filter()</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort" target="_blank" rel="noopener noreferrer"><code>sort()</code></a> i <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank" rel="noopener noreferrer"><code>forEach()</code></a>)
+      <pre>sortPerson(persons) <span class="c">=&gt; ['Grzegorz', 'Jan', 'Agata', 'Adam', 'Krzysztof']</span></pre>
+    </li>
+  </ol>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="Lab4">
+        <button class="collapsed btn btn-link" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="contentLab4" data-target="#contentLab4">
+          <h6 class="mb-0">
+            Laboratorium 4 &ndash; Funkcje i funkcje wbudowane cd.<i class="fas fa-angle-down rotate-icon"></i>
+          </h6>
+        </button>
+      </div>
+      <div id="contentLab4" class="collapse" aria-labelledby="Lab4">
+        <div class="card-body">
+            <div class="lab-content">
+  <p>
+    Na górze każdego tworzonego skryptu dodaj: <pre>'use strict';</pre>
+  </p>
+  <hr>
+  <ol>
+    <li>
+      Mamy tablicę: <pre>const arr = [10, 'a', 21, true, null, undefined, 1, false, 'b', 2];</pre>
+      Wykorzystując funkcje wbudowane: 
+      <ul>
+        <li><code>some()</code> &ndash; Sprawdź, czy w tablicy jest jakakolwiek wartość <code>null</code></li>
+        <li><code>find()</code> &ndash; Znajdź pierwszego stringa</li>
+        <li><code>findIndex()</code> &ndash; Znajdź indeks wartości <code>true</code></li>
+        <li><code>filter()</code> i <code>sort()</code> &ndash; Znajdź wszystkie liczby, a następnie posortuj je rosnąco</li>
+      </ul>
+    </li>
+    <li>
+      Mamy tablicę obiektów:
+<pre>
+const persons = [
+  { id: 1, firstName: 'Adam', lastName: 'Nowak' },
+  { id: 2, firstName: 'Kamil', lastName: 'Kowalski' },
+  { id: 3, firstName: 'Anna', lastName: 'Mazur' },
+  { id: 4, firstName: 'Katarzyna', lastName: 'Maj' },
+  { id: 5, firstName: 'Jakub', lastName: 'Adamski' }
+]
+</pre>
+      używając funkcji wbudowanej <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map" target="_blank" rel="noopener noreferrer"><code>map()</code></a> stwórz nową tablicę obiektów o następujących kluczach:
+      <ul>
+        <li><code>label</code> &ndash; imię i nazwisko (konkatenacja stringów)</li>
+        <li><code>value</code> &ndash; cały obiekt</li>
+      </ul>
+      <pre>
+<span class="c">// Oczekiwany output:</span>
+[
+  {
+    label: 'Adam Nowak',
+    value: { id: 1, firstName: 'Adam', lastName: 'Nowak' }
+  },
+  {
+    label: 'Kamil Kowalski',
+    value: { id: 2, firstName: 'Kamil', lastName: 'Kowalski' }
+  },
+  <span class="c">// ...</span>
+]
+      </pre>
+      Czym się różni funkcja wbudowana <code>forEach()</code> od <code>map()</code>? Odpowiedź zapisz w&nbsp;rozwiązaniu tego zadania.
+    </li>
+    <li>
+      Napisz funkcję, w której zadeklarujesz zmienną liczbową o&nbsp;ustalonej, stałej wartości. Następnie zwraca funkcję, która przyjmuje liczbę jako argument. Funkcja ta zwraca sumę argumentu i wcześniej zadeklarowanej wartości. (Inaczej - zadeklaruj funkcję w&nbsp;funkcji).
+    </li>
+    <li>
+      Napisz samowywołującą się funkcję anonimową (IIFE), która przyjmuje jako parametr wartość <code>String</code> i&nbsp;zwraca najdłuższy wyraz. Spróbuj poszukać funkcji wbudowanych, które mogą Ci się przydać do rozwiązania tego zadania, aby rozwiązanie było jak najkrótsze. Czy jesteś w stanie napisać funkcję tak, aby składała się jedynie z <em>return</em>?
+        <pre>
+<span class="c">// Input: </span>
+'Ala ma kota'
+
+<span class="c">// Output: </span> 
+'kota'
+</pre>
+    </li>
+    <li>
+      Napisz funkcję, która wywołuje funkcję, którą otrzymuje jako argument.
+    </li>
+    <li>
+      Napisz funkcję rekurencyjną, która zwraca sumę liczb od 1 do liczby przyjętej jako argument.
+      <pre>
+<span class="c">// Input</span>
+sum(4)
+<span class="c">// Output</span>
+10 <span class="c">// bo 1 + 2 + 3 + 4</span></pre>
+    </li>
+    <li>
+      Napisz funkcję, która przyjmuje tablicę liczb i sprawdza, czy wartości w&nbsp;tablicy układają się w&nbsp;palindrom.
+    </li>
+    <li>
+      <em>(kolokwium 2022)</em>
+      Stwórz funkcję <code>getCounter</code>, która jako parametr przyjmuje dwie wartości &ndash; <code>min</code> i <code>max</code>. Funkcja powinna zwrócić funkcję, która przy każdym wywołaniu zwraca liczbę o 1 większą niż poprzednio zwrócona począwszy od podanej wartości minimalnej, a kończąc na maksymalnej. Każde kolejne wywołanie powinno zwrócić <em>undefined</em>. (<strong>Uwaga!</strong> Rozwiązanie tego zadania nie może używać zmiennych globalnych!)
+<pre>
+<span class="c">// Przykład działania</span>
+<span class="c">// Wywołujemy funkcje</span>
+getCounter(5, 7)
+
+<span class="c">// Wywołujemy zwracaną przez <code>getCounter</code> funkcje, która daje output kolejno:</span>
+Pierwsze wywołanie =&gt; output: 5
+Drugie wywołanie =&gt; output: 6
+Trzecie wywołanie =&gt; output: 7
+Czwarte wywołanie =&gt; output: undefined
+</pre>
+    </li>
+  </ol>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="Lab5">
+        <button class="collapsed btn btn-link" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="contentLab5" data-target="#contentLab5">
+          <h6 class="mb-0">
+            Laboratorium 5 &ndash; Reduce <i class="fas fa-angle-down rotate-icon"></i>
+          </h6>
+        </button>
+      </div>
+      <div id="contentLab5" class="collapse" aria-labelledby="Lab5">
+        <div class="card-body">
+            <div class="lab-content">
+  <p>
+    Na górze każdego tworzonego skryptu dodaj: <pre>'use strict';</pre>
+  </p>
+  <hr>
+  <div class="alert alert-secondary" role="alert">
+    <strong>Uwaga!</strong> We wszystkich rozwiązaniach zadań należy użyć <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce" target="_blank" rel="noopener noreferrer"><code>reduce()</code></a> i jest to <em>jedyna</em> funkcja iteracyjna potrzebna do wykonania poniższych zadań.
+  </div>
+  <ol>
+    <li>Zsumuj wszystkie elementy w&nbsp;tablicy.</li>
+    <li>
+      Operując na tablicy liczb, stwórz nową tablicę liczb, w&nbsp;której wszystkie ujemne liczby zostają podniesione do kwadratu.
+      <pre>[ -5, 4, -2, 4, -5 ] =&gt; [ 25, 4, 4, 4, 25 ]
+</pre>
+    </li>
+    <li>Tablicę obiektów zmodyfikuj tak, aby znajdujące się w niej obiekty znajdowały się pod ich <code>id</code> jako indeks.
+      <pre>
+<span class="c">// Input: </span>
+[ 
+  { id: 'abc', name: 'Ala' }, 
+  { id: 'def', name: 'Tomek' }, 
+  { id: 'ghi', name: 'Jan' } 
+]
+
+<span class="c">// Output: </span> 
+[ 
+  { abc: { id: 'abc', name: 'Ala' } }, 
+  { def: { id: 'def', name: 'Tomek' } }, 
+  { ghi: { id: 'ghi', name: 'Jan' } }
+]
+</pre>
+    </li>
+    <li>
+      Napisz funkcję, który będzie na wejściu przyjmowała tablicę liczb, a&nbsp;zwracała tablicę stringów składających się z&nbsp;indeksów elementów oraz wartości jakie pod nimi występują.
+      <pre>
+<span class="c">// Input: </span>
+[ 1, 3, 6, 2, 9 ]
+
+<span class="c">// Output: </span> 
+[ '0: 1', '1: 3', '2: 6', '3: 2', '4: 9' ]
+</pre>
+    </li>
+    <li>
+      Mamy następującą listę zakupów:
+        <pre>
+const wishlist = [   
+  { name: 'Czajnik', netto: 100 },  
+  { name: 'Lodówka', netto: 2730 },  
+  { name: 'Mikrofalówka', netto: 940 },  
+  { name: 'Mikser', netto: 120 },  
+  { name: 'Piekarnik', netto: 3100 }, 
+  { name: 'Zmywarka', netto: 2400 },
+  { name: 'Toster', netto: 260 }
+]
+</pre>
+      <ol style="list-style-type: lower-latin;">
+        <li>Oblicz całkowity koszt wszystkich produktów (pamiętaj, aby doliczyć podatek VAT 23%).</li>
+        <li>Zamień tablicę obiektów w tablicę wartości (cen netto).</li>
+        <li>
+          Potrzebujemy naszej listy zakupów w&nbsp;formie tablicy stringów, gdzie każdy element to: <pre>'nazwa: cena netto'</pre> Napisz funkcję, która przyjmuje w&nbsp;parametrach tablicę i funkcję, a następnie zwraca przetworzoną tablicę.
+<pre>
+<span class="c">// Przykładowe działanie:</span>
+const newArray = func(wishlist, (x) =&gt; x.name + ": " + x.netto);
+console.log(newArray);<span class="c">// wypisanie nowej tablicy</span>
+</pre> Uwaga: Pierwotna tablica nie zostaje modyfikowana.
+        </li>
+        <li>Podobnie, jak w poprzednim zadaniu, stwórz funkcję przyjmującą w parametrach tablicę i funkcję. W zależności od przekazanej funkcje wyfiltruj odpowiednio obiekty (np. tańsze niż 500).
+<pre>
+<span class="c">// Przykładowe działanie:</span>
+const newArray = func(wishlist, (x) =&gt; x.netto &lt; 500)
+console.log(newArray); <span class="c">// wypisanie tablicy obiektów</span>
+</pre>
+        </li>
+        <li>
+          Napisz funkcję przyjmującą tablicę i funkcję. W&nbsp;zależności od przekazanej funkcji znajdź obiekt spełniający podany warunek. Zakładamy, że przyjmowana lista zawiera unikalne obiekty. Jeśli danego elementu nie ma w tablicy, zwróć <code>undefined</code>
+<pre>
+<span class="c">// Przykładowe działanie:</span>
+const result = func(wishlist, (x) =&gt; x.name === 'Mikser' );  
+console.log(result); <span class="c">// wypisanie obiektu</span>
+</pre>
+        </li>
+      </ol>
+    </li>
+    <li>
+      Wykorzystując plik <a href="jp2/files/lab05/games.js" download="games.js"><code>games.js</code></a> stwórz tablicę stringów zawierającą tylko 4 pierwsze linki obiektów do zdjęć. 
+      <pre>
+<span class="c">// Input</span>
+const games = [
+  {
+    title: 'Grand Theft Auto V',
+    year: 2013,
+    imageUrl: 'https://...'
+  },
+  <span class="c">// ..</span>
+]
+
+<span class="c">// Output</span>
+['https://...', 'https://...', 'https://...', 'https://...']
+</pre>
+      Plik <code>games.js</code> powinien pozostać bez zmian, a rozwiązanie powinno zostać zawarte w innym pliku. Aby odwołać się do zmiennej z&nbsp;zewnętrzenego pliku na górze swojego rozwiązania umieść: <pre>const games = require('./games.js').games;</pre>
+    </li>
+    <li>
+      W pliku <a href="jp2/files/lab05/shoppingList.js" download="shoppingList.js"><code>shoppingList.js</code></a> znajduje się tablica zawierająca listę zakupów. Odwołaj się do niej, nie kopiując jej do pliku zawierającego rozwiązanie. Wykorzystując <em>reduce</em> wykonaj poniższe polecenia:
+      <ol style="list-style-type: lower-latin;">
+        <li>
+          Patrząc na listę zakupów policz, ile w&nbsp;sumie wydasz na nabiał.
+        </li>
+        <li>
+          Znajdź wszystkie produkty, które kupisz na kilogramy, a następnie wypisz je w kolejności alfabetycznej (tablica stringów)
+        </li>
+        <li>Zwróć listę zakupów jako string, który każdy z produktów będzie wypisywał w&nbsp;następujący sposób (kolejność dowolna):
+          <pre>
+pieczywo: 
+1. chleb 
+ 
+owoce: 
+1. jabłka 
+2. banan 
+ 
+nabiał: 
+1. mleko 
+<span class="c">// ...</span>
+</pre>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</div>        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="Lab6">
+        <button class="collapsed btn btn-link" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="contentLab6" data-target="#contentLab6">
+          <h6 class="mb-0">
+            Laboratorium 6 &ndash; Reduce + Yarn, ESLint, Nodemon <i class="fas fa-angle-down rotate-icon"></i>
+          </h6>
+        </button>
+      </div>
+      <div id="contentLab6" class="collapse" aria-labelledby="Lab6">
+        <div class="card-body">
+            <div class="lab-content">
+  <div>
+    <p><strong>Yarn</strong></p>
+    <p>Od dzisiejszych zajęć, na każdych laboratoriach będziemy tworzyć projekt za pomocą menadżera paczek &ndash; <strong>Yarna</strong>. Yarn jest już zainstalowany w salach laboratoryjnych, więc jeżeli pracujesz na komputerze uczelnianym możesz śmiało pominąć pierwszy podpunkt.</p>
+    <ul>
+      <li>Zainstaluj Yarna za pomocą komendy <pre>npm install --global yarn</pre></li>
+      <li>Sprawdź, czy Yarn jest zainstalowany i&nbsp;w&nbsp;jakiej wersji <pre>yarn -v</pre></li>
+      <li>Stwórz nowy folder dla dzisiejszych laboratoriów, a wewnątrz tego folderu wykonaj komendę <pre>yarn init</pre> Wprowadź nazwę projektu (zwyczajowo powinna być taka sama, jak nazwa folderu, w którym ją wywołujemy), a&nbsp;resztę opcji zatwierdź klawiszem enter. W&nbsp;folderze pojawi się plik <code>package.json</code> oraz <code>yarn.lock</code>.</li>
+    </ul>
+  </div>
+
+  <hr>
+
+  <div>
+    <p><strong>ESLint</strong></p>
+    <p>Zaczniemy również korzystać z narzędzia o&nbsp;nazwie <strong>ESLint</strong>. Wewnątrz utworzonego folderu wykonaj polecenie</p>
+    <pre>yarn add eslint --dev</pre> 
+    <p>Parametr <code>--dev</code> oznacza, że dodana paczka będzie służyła wyłącznie developmentowi i&nbsp;nie będzie instalowana na produkcji.</p>
+
+    <div class="alert alert-secondary mt-2" role="alert">
+      Od tej pory należy pilnować, aby tworzony do projektu folder <strong>node_modules</strong> nie trafił na repozytorium. W&nbsp;tym celu tworzymy plik <code>.gitignore</code> z&nbsp;nazwą wspomnianego folderu. Jeżeli chcesz dokładnej informacji, czego nie powinno wrzucać na repozytorium zajrzyj do gotowego, rozbudowanego pliku <a href="https://github.com/github/gitignore/blob/main/Node.gitignore" target="_blank" rel="noopener noreferrer">Node.gitignore</a>.<br/><br/>
+      Później, po pobraniu projektu z&nbsp;repozytorium (niezawierającego <strong>node_modules</strong> z&nbsp;modułami niezbędnymi do działania programu) możemy doinstalować wszystkie potrzebne paczki, jakie zostały określone w&nbsp;pliku <code>package.json</code> komendą <code>yarn install</code>.
+      <br/><br/>
+      Dlaczego folderu <code>node_modules</code> nie należy wrzucać na repo?
+
+      <div class="thumbnails mt-2">
+        <a href="jp2/imgs/node_modules_4.jpg" target="_blank" rel="noopener noreferrer"><img src="./jp2/imgs/node_modules_4.jpg" class="img-thumbnail" alt="Node modules 4"></a>
+        <a href="jp2/imgs/node_modules_2.png" target="_blank" rel="noopener noreferrer"><img src="./jp2/imgs/node_modules_2.png" class="img-thumbnail" alt="Node modules 2"></a>
+        <a href="jp2/imgs/node_modules_1.jpg" target="_blank" rel="noopener noreferrer"><img src="./jp2/imgs/node_modules_1.jpg" class="img-thumbnail" alt="Node modules 1"></a>
+        <a href="jp2/imgs/node_modules_3.jpg" target="_blank" rel="noopener noreferrer"><img src="./jp2/imgs/node_modules_3.jpg" class="img-thumbnail" alt="Node modules 3"></a>
+      </div>
+    </div>
+
+    <p>Następnie uruchom inicjalizację eslint poleceniem</p>
+    <pre>yarn run eslint --init</pre> 
+    <p>W konsoli pojawi się parę opcji do ustawienia. Wybierz kolejno: </p>
+    <pre>
+How would you like to use ESLint? · problems
+What type of modules does your project use? · commonjs
+Which framework does your project use? · none
+Does your project use TypeScript? · No
+Where does your code run? · node
+What format do you want your config file to be in? · JSON    
+</pre>
+    <p>Wszystkie powyższe opcje można zmieniać edytując plik <code>.eslintrc.json</code>.</p>
+    <p>Następnie utwórz folder <code>src</code> i wewnątrz niego utwórz skrypt <code>index.js</code>. Wklej do niego poniższy kod:</p>
+    <pre>
+switch(status) {
+  case 'Completed':
+    runFunc();
+ 
+  case 'Running': 
+    runFunc2();
+}</pre>
+    <p>Powyższy kod wygeneruje błędy <strong>ESLint</strong> &ndash; korzystająć z podpowiedzi edytora, napraw je. Działanie eslinta możemy sprawdzić na kilka sposobów: </p>
+    <ol>
+      <li>Instalując rozszerzenie <em>ESLint</em> w VS Code</li>
+      <li>Wywołując komendę <code>eslint '**/*.js'</code> opisaną w konfiguracji projektu (instrukcja niżej)</li>
+    </ol>
+  </div>
+
+  <hr>
+
+  <div>
+    <p><strong>Nodemon</strong></p>
+    <p>Kolejną paczką, którą dodamy jest <strong>Nodemon</strong>, który wykrywa zmiany w kodzie i&nbsp;automatycznie ponownie uruchamia skrypt. W&nbsp;głównym folderze projektu wykonaj polecenie:</p>
+    <pre>yarn add --dev nodemon</pre> 
+    <p>Następnie możesz uruchomić konkretną paczkę za pomocą:</p>
+    <pre>npx nodemon src/index.js</pre> 
+    <p>Polecenie <strong>npx</strong> uruchamia zainstalowane lokalnie paczki (w&nbsp;tym przypadku nodemon, analogiczne działanie dla eslinta). Zmień w&nbsp;dowolny sposób skrypt, a następnie zapisz go. Zauważ, że skrypt został ponownie uruchomiony, po zapisie.
+    <p>Ostatnim krokiem będzie edycja pliku <code>package.json</code> (plik zawierający konfiguracje projektu). Dodaj poniższy kod w&nbsp;dowolnym miejscu podanego pliku (zachowując strukturę pliku json):</p>
+    <pre>
+"scripts": {
+  "start": "nodemon src/index.js",
+  "eslint": "eslint '**/*.js'"
+}
+</pre>
+    <p>W sekcji <em>scripts</em> podajemy instrukcje, co mają się wykonać po wpisaniu konkretnej komendy. Uruchom nodemona w głównym folderze poleceniem: 
+    <pre>yarn start</pre>
+    W&nbsp;ten sposób uruchomiliśmy nodemona na tym samym skrypcie. Modyfikując plik <code>package.json</code> ustawiliśmy domyślną komendę uruchamiającą skrypt w tym projekcie. Gdybyśmy nie chcieli używać nodemona, moglibyśmy ustawić <code>package.json</code> w ten sposób:</p>
+    <pre>
+"scripts": {
+  "start": "node src/index.js"
+}
+</pre>
+  </div>
+
+  <hr>
+  <hr>
+
+  <div>
+    <p><strong>Zanim przejdziesz do zadań</strong></p>
+    Plik <code>package.json</code> skonfiguruj tak, aby po wpisaniu odpowiedniej komendy wykonał się konkretny skrypt:
+    <ul>
+      <li>Komenda <code>yarn zad1</code> uruchomi plik z&nbsp;rozwiązaniem zadania 1.</li>
+      <li>Komenda <code>yarn zad2</code> uruchomi plik z&nbsp;rozwiązaniem zadania 2.</li>
+      <li>...</li>
+    </ul>
+    <div class="alert alert-secondary mt-2" role="alert">
+      Jeżeli chcesz dodać więcej restrykcji do pisanego przez siebie kodu, podmień plik zawierający konfiguracje eslinta na następujacy: <a href="https://gitlab.com/atejszerska/jezyki-programowania-2/-/blob/main/.eslintrc.json" target="_blank" rel="noopener noreferrer"><code>.eslintrc.json</code></a>.
+    </div>
+  </div>
+
+  <hr>
+
+  <ol>
+    <li>
+      <em>(kolokwium 2020)</em>
+      Napisz funkcję, która za pomocą <em>reduce</em> obliczy średnią. Funkcja powinna przyjmować dwa parametry: tablicę obiektów i oznaczenie zmiennej, z której ma być wyliczana średnia.
+<pre>
+<span class="c">// Przykład listy</span>
+const arr = [ { x: 4, y: 2}, { x: 1, y: 8 }, { x: 4, y: 2 } ];
+</pre>
+    </li>
+    <li>
+      <em>(kolokwium 2020)</em>
+      Pobierz plik <a href="jp2/files/lab06/ships.js" download="ships.js"><code>ships.js</code></a>, a następnie wykorzystując programowanie funkcyjne (i funkcję <em>reduce</em>) uzupełnij poniższe rozwiązanie tak, aby:
+      <ul>
+        <li>W outpucie uwzględniamy tylko obiekty, które nie zostały zniszczone.</li>
+        <li>Kluczem każdego z obiektów w&nbsp;obiekcie powinna być wartość <em>manufacturer</em>.</li> 
+        <li>Pod każdym kluczem <em>manufacturer</em> powinna znajdować się tablica statków.</li>
+        <li>Każdy statek powinien być obiektem zawierającym wysokość statku i&nbsp;maksymalną prędkość.</li>
+      </ul>
+<pre>
+const ships = require('./ships.js').shipsArray;
+
+const result = ships.reduce(
+  <span class="c">// Uzupełnij</span>
+) 
+
+console.dir(result, { depth: null });
+</pre>
+<pre>
+<span class="c">// Oczekiwany output:</span>
+{
+  'Corellian Engineering': [ 
+    { 'Millenium Falcon': { height: 7.8, maximumSpeed: 1200 } } 
+  ],
+  'Sienar Fleet Systems': [
+    { 'Tie Fighter': { height: 7.5, maximumSpeed: 1200 } },
+    { 'Lambda class T-4a shuttle': { height: 120, maximumSpeed: 850 } }
+  ],
+  'Kuat Drive Yards': [
+    { 'Executor Star Dreadnought': { height: 345, maximumSpeed: 60000 } },
+    { 'Venator Star Destroyer': { height: 268, maximumSpeed: 975000 } }
+  ],
+  <span class="c">// ...</span>
+}
+</pre>
+    </li>
+    <li>
+      <em>(poprawa kolokwium 2020)</em>
+      Pobierz plik <a href="jp2/files/lab06/ships.js" download="ships.js"><code>ships.js</code></a>, a następnie wykorzystując zawarte w nim dane, zwróć stringa zawierającego wypisane osoby z&nbsp;podziałem na statki, w jakich są załogą oraz <em>manufacturer</em> tego statku. W swoim rozwiązaniu użyj jedynie funkcji wbudowanych, a sam obiekt powinien zostać wygenerowany za pomocą <em>reduce</em>.
+      <pre>
+<span class="c">// Oczekiwany output</span>
+Han Solo
+1. Millenium Falcon, manufacturer: Corellian Engineering
+2. A-Wing, manufacturer: Kuat Systems Engineering
+3. Tantive IV, manufacturer: Corellian Engineering Corporation
+
+Chewbacca
+1. Millenium Falcon, manufacturer: Corellian Engineering
+
+Luke Skywalker
+1. Millenium Falcon, manufacturer: Corellian Engineering
+2. X-Wing, manufacturer: Incom Corporation
+
+Darth Vader
+1. Tie Fighter, manufacturer: Sienar Fleet Systems
+2. Executor Star Dreadnought, manufacturer: Kuat Drive Yards
+3. Victory Star Destroyer, manufacturer: Sienar Fleet Systems
+4. Lambda class T-4a shuttle, manufacturer: Sienar Fleet Systems
+
+<span class="c">// ...</span>
+</pre>
+    </li>
+    <li>
+      <em>(kolokwium 2021)</em>
+      W pliku <a href="jp2/files/lab06/books.js" download="books.js"><code>books.js</code></a> znajduje się tablica książek. Posegreguj podane książki względem gatunku. Jeśli książka posiada więcej gatunków niż jeden, powinna znaleźć się pod każdym z tych gatunków. Dodatkowo usuń wszystkie pola oprócz tytułu i autora. Użyj wyłącznie funkcji wbudowanych, <em>for</em> zdecydowanie odpada.
+      <pre>
+const books = require('./books.js').booksArray;
+        
+const result = books.reduce(
+  <span class="c">// Uzupełnij</span>
+) 
+        
+console.dir(result, { depth: null });
+</pre>
+<pre>
+<span class="c">// Oczekiwany output</span>
+{
+  'fantasy': [
+    { title: 'Lord of the Rings', author: 'J.R.R. Tolkien' },
+    { title: 'Harry Potter', author: 'J.K. Rowling' },
+    <span class="c">// ...</span>
+  ],
+  'fiction': [
+    { title: 'The Borthers Karamazov', author: 'Fyodor Dostoyevsky' },
+    <span class="c">// ...</span>
+  ],
+  <span class="c">// ...</span>
+}
+</pre>
+    </li>
+    <li>
+      <em>(kolokwium 2022)</em>
+      W pliku <a href="jp2/files/lab06/series.js" download="series.js"><code>series.js</code></a> znajduje się lista seriali. Wykorzystując jedynie programowanie funkcyjne i jedynie funkcje wbudowane takie jak: <em>reduce</em>, <em>sort</em>, <em>filter</em> i <em>push</em> stwórz dwa obiekty <em>miniseries</em> i <em>series</em>, gdzie:
+      <ol>
+        <li>
+          <em>miniseries</em> będzie tablicą zawierającą tylko miniseriale (jednosezonowe), posortowane alfabetycznie. Każdy z&nbsp;miniseriali powinien zawierać wyłącznie <em>name</em>, <em>year</em> i <em>type</em>. (Miniseriale rok rozpoczęcia i&nbsp;zakończenia mają taki sam)
+        </li>
+        <li>
+          <em>series</em> będzie trzyelementową tablicą tablic zawierającą seriale (bez miniseriali), gdzie:
+          <ul>
+            <li>pierwsza tablica będzie zawierała seriale rozpoczęte przed rokiem 2010</li>
+            <li>druga tablica będzie zawierała seriale rozpocząte między 2010 (włącznie) a 2020 rokiem</li>
+            <li>trzecia tablica będzie zawierała tablice rozpoczęte po 2020 (włącznie)</li>
+          </ul>
+        </li>
+      </ol>
+      Dodatkowo:
+      <ul>
+        <li>Seriale powinny być posortowane latami, od najstarszego tzn. wg roku rozpoczęcia, a następnie wg. roku zakończenia (jeśli serial nie ma roku zakończenia, to powinien wyświetlić się przed serialami, które rok zakończenia mają).</li>
+        <li>Gatunek powinien być zapisany jako string, nie jako tablica stringów: <pre>["Dramat", "Wojenny"] =&gt; "Dramat, Wojenny"</pre> Między kolejnymi gatunkami, po przecinku znajduje się spacja.</li>
+        <li>Jeżeli serial nie ma roku zakończenia, to nie wyświetlamy go (tj. roku zakończenia) w obiekcie.</li>
+      </ul>
+<pre>
+<span class="c">// Output miniseries</span>
+[
+  { name: "Czarnobyl", type: "Dramat", year: 2019 },
+  { name: "Gambit królowej", type: "Dramat", year: 2020 },
+  { name: "Kompania braci", type: "Dramat, Wojenny", year: 2001 },
+  { name: "Pacyfik", type: "Dramat, Wojenny", year: 2010 },
+];
+
+<span class="c">// Output series</span>
+[
+  [
+    <span class="c">// ...</span>
+  ],
+  [
+    <span class="c">// ...</span>
+    {
+      id: 14,
+      name: "Rick i Morty",
+      startYear: 2013,
+      type: "Komedia, Przygodowy, Sci-Fi, Animacja dla dorosłych",
+      seasons: 9,
+    },
+    {
+      id: 11,
+      name: "House of Cards",
+      startYear: 2013,
+      endYear: 2018,
+      type: "Dramat, Polityczny",
+      seasons: 6,
+    },
+    <span class="c">// ...</span>
+  ],
+  [
+    <span class="c">// ...</span>
+  ],
+];
+</pre>
+    </li>
+  </ol>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="Lab7">
+        <button class="collapsed btn btn-link" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="contentLab7" data-target="#contentLab7">
+          <h6 class="mb-0">
+            Laboratorium 7 &ndash; Babel + Lodash <i class="fas fa-angle-down rotate-icon"></i>
+          </h6>
+        </button>
+      </div>
+      <div id="contentLab7" class="collapse" aria-labelledby="Lab7">
+        <div class="card-body">
+          <div class="lab-content">
+  <div>
+    <p><strong>Babel</strong></p>
+    Dziś zaczniemy używać kolejnego narzędzia o nazwie <strong>Babel</strong>. Babel konwersuje tworzony kod (ES6) na kod (starszy) zgodny z ES5. Najpierw tworzymy projekt oraz dodajemy i&nbsp;konfigurujemy do niego wspomniane narzędzie: <pre>yarn add --dev @babel/core @babel/cli @babel/preset-env @babel/node</pre> Tworzymy plik <code>.babelrc</code>, a w nim: 
+<pre>
+{
+  "presets": ["@babel/preset-env"]
+}</pre>
+    Na koniec dodaj do projektu narzędzia używane na poprzednich zajęciach (<strong>ESLint</strong> &ndash; <a href="https://gitlab.com/atejszerska/jezyki-programowania-2/-/blob/main/babel/.eslintrc.json" target="_blank" rel="noopener noreferrer">konfiguracja lintera</a> i&nbsp;<strong>Nodemon</strong>). W&nbsp;folderze <code>src</code> utwórz plik <code>index.js</code>, a&nbsp;w&nbsp;pliku <code>package.json</code> dodaj (zachowując strukturę pliku json):  
+    <pre>
+"scripts": {
+  "start": "nodemon src/index.js",
+  "babel": "babel src -d es5out"
+}</pre>
+    W pliku <code>index.js</code> stwórz funkcję strzałkową (arrow function) sprawdzającą, czy liczba podana w&nbsp;argumencie jest dodatnia czy ujemna. Oczywiście poniższy kod należy odpowiednio zmodyfikować.
+<pre>
+const isPositive = () =&gt; {
+  return true;
+}
+
+isPositive(2); <span class="c">// Output: true</span>
+isPositive(-3); <span class="c">// Output: false</span>
+</pre>
+    <p>Wywołaj działanie Babela i sprawdź rezultat w pliku <code>es5out/index.js</code>. Zwróć uwagę na różnice między jednym a drugim kodem.</p>
+    Pamiętaj, aby przed wrzuceniem rozwiązania na repozytorium utworzyć plik <code>.gitignore</code>:
+    <pre>
+.idea/ <span class="c"># Jeśli korzystasz z IntelliJ</span>
+node_modules/
+es5out/
+log/
+.yarn/</pre>
+  </div>
+
+  <hr>
+  
+  <ol>
+    <li>
+      Dodaj do utworzonego projektu bibliotekę <a href="https://lodash.com/" target="_blank" rel="noopener noreferrer">lodash</a>: <pre>yarn add lodash</pre>
+      Utwórz plik <code>zad_01.js</code>, a w nim zaimportuj pobraną bibliotekę oraz plik <a href="jp2/files/lab07/toplist.js" download="toplist.js"><code>toplist.js</code></a> zawierający fragment listy przebojów wszechczasów radiowej trójki: 
+      <pre>
+const { lp3 } = require('./toplist');
+const _ = require('lodash');</pre>
+      <p>Następnie skonfiguruj projekt tak, aby skrypt zawierający rozwiązanie został uruchomiony po wpisaniu komendy <code>yarn zad1</code>.</p>   
+      Wykorzystując bibliotekę <strong>lodash</strong> wykonaj poniższe polecenia:
+      <ol>
+        <li>Stwórz tablicę z wszystkimi utworami zespołu Queen z listy przebojów.</li>
+        <li>Stwórz tablicę z utworami zespołu Pink Floyd, których pozycja zmieniła się, o&nbsp;co najmniej 10 miejsc w górę.</li>
+        <li>Posortuj listę rosnąco wg. spadku/wzrostu na liście przebojów (zmienna <code>change</code>), a następnie usuń&nbsp;<code>n</code> ostatnich utworów (w jednym wywołaniu).</li>
+        <li> Stwórz obiekt zawierający tylko nazwę zespołu i utworu, który znajduje się na pierwszym miejscu listy.</li>
+        <li>Napisz funkcję, która przyjmuje tablicę liczb. Następnie po sprawdzeniu czy każda z wartości w tablicy jest liczbą (za pomocą <em>lodasha</em>), skrypt wypisze utwory, znajdujące się pod miejscami wymienionymi w tablicy.</li>
+        <li>Napisz skrypt, który przyjmuje 3 argumenty: <code>(n, min, max)</code>, a&nbsp;następnie wypisze <code>n</code> razy losowy utwór z listy przebojów z zakresu <code>(min, max)</code>.</li>
+        <li>Wypisz 10 kolejnych utworów z tablicy, zachowując odstęp 2 sekund pomiędzy każdym.</li>
+        <li>Znajdź wszystkie utwory, które zaliczyły spadek w liście przebojów.</li>
+        <li>Utwórz słownik z listy przebojów, gdzie kluczem będzie nazwa utworu.</li>
+        <li>Utwórz tablicę, która zawiera zgrupowane po nazwie zespołu utwory. Każdy z utworów powinien posiadać informacje o tytule i zajmowanej pozycji.
+          <pre>
+<span class="c">// Output:</span>
+console.log(bandSongs);  
+
+[  
+  {
+    Queen: [ 
+      { song: 'Bohemian Rhapsody', place: 1},
+      { song: 'The show most go on', place: 17}
+    ]
+  },
+  {
+    Pink Floyd: [ 
+      { song: 'Wish you were here', place: 6 }, 
+      <span class="c">// ...</span>
+    ]
+  },
+  <span class="c">// ...</span>
+]</span>
+</pre>
+        </li>
+        <li>Policz częstość występowania każdego z zespołów w zestawieniu.</li>
+        <li>Wypisz największy spadek i najwyższy wzrost na liście.</li>
+      </ol>
+    </li>
+    <li>
+      <em>(kolokwium 2022)</em>
+      Stwórz funkcję <code>detectChanges</code>, która przyjmuje dwa parametry:
+      <ul>
+        <li><em>original</em> &ndash; obiekt,</li>
+        <li><em>modified</em> &ndash; obiekt o takiej samej strukturze, jak <em>original</em>, ze zmienionymi niektórymi wartościami.</li>
+      </ul>
+      Uzupełnij funkcję tak, aby zwracała tablicę, zawierającą parę klucz-wartość, gdzie wartość uległa zmianie. Funkcja powinna działać dla różnych obiektów, z różnymi parami klucz-wartość.
+
+<pre>
+function detectChanges(original, modified) {
+  <span class="c">// Uzupełnij</span>
+}
+</pre>
+
+<pre>
+<span class="c">// Przykład 1</span>
+
+const object1 = {
+  id: 2,
+  name: 'Przyjaciele',
+  startYear: 1994,
+  endYear: 2004,
+  type: ["Komedia"],
+  seasons: 10
+};
+
+const object2 = {
+  id: 2,
+  name: 'Przyjaciele edytowany',
+  startYear: 1994,
+  endYear: 2010,
+  type: ["Komedia"],
+  seasons: 10
+};
+
+detectChanges(object1, object2); <span class="c">// =&gt; [ [ 'name', 'Przyjaciele edytowany' ], [ 'endYear', 2010 ] ]</span>
+</pre>
+
+<pre>
+<span class="c">// Przykład 2</span>
+
+const object1 = {
+  value: { field: "old value" },
+  name: 'test'
+}
+
+const object2 = {
+  value: { field: "new value" },
+  name: 'test'
+}
+
+detectChanges(object1, object2); <span class="c">// =&gt; [ [ 'value', { field: 'new value' } ] ]</span>
+</pre>
+    </li>
+    <li>
+      <em>(kolokwium 2021)</em>
+      Wyobraź sobie, że piszesz program do sprzedaży ciastek w swojej cukierni. Każde ciastko kosztuje 5 zł i&nbsp;każdy klient może kupić tylko jedno ciastko. Każdy klient zapłaci za ciastko monetą lub banknotem o nominale 5, 10 lub 20 zł. Zawsze musisz wydać prawidłową resztę. Napisz program, który sprawdzi, czy będziesz w stanie wypłacić każdemu klientowi resztę.
+      <p><strong>Uwaga!</strong> Jako nowa cukiernia nie masz wkładu własnego oprócz ciastek. Twój początkowy budżet wynosi 0 zł.</p>
+<pre>
+<span class="c">// Przykład działania</span>
+checkExchange([5, 5, 5, 10, 20]) <span class="c">// =&gt; true</span>
+checkExchange([5, 5, 10, 10, 20]) <span class="c">// =&gt; false</span>
+checkExchange([10, 10]) <span class="c">// =&gt; false</span>
+checkExchange([5, 5, 10]) <span class="c">// =&gt; true</span>
+</pre>
+    </li>
+  </ol>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="Lab8">
+        <button class="collapsed btn btn-link" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="contentLab8" data-target="#contentLab8">
+          <h6 class="mb-0">
+            Laboratorium 8 &ndash; Obiekty, obiektowość <i class="fas fa-angle-down rotate-icon"></i>
+          </h6>
+        </button>
+      </div>
+      <div id="contentLab8" class="collapse" aria-labelledby="Lab8">
+        <div class="card-body">
+          <div class="lab-content">
+  <div>
+    Utwórz projekt za pomocą komendy <code>yarn init</code>, a następnie dodaj do niego narzędzia: Nodemon, ESLint i Babel. Plik <code>package.json</code> skonfiguruj tak, aby po wpisaniu odpowiedniej komendy uruchomił się konkretny plik. 
+    <ul>
+      <li>Komenda <code>yarn zad1</code> uruchomi plik <code>objects.js</code></li>
+      <li>Komenda <code>yarn zad2</code> uruchomi plik <code>creatingObjects.js</code></li>
+      <li>Komenda <code>yarn zad3</code> uruchomi plik <code>log.js</code></li>
+      <li>Komenda <code>yarn zad4</code> uruchomi plik <code>coffeeShop.js</code></li>
+      <li>Komenda <code>yarn zad5</code> uruchomi plik <code>this.js</code></li>
+    </ul>
+    <p>Wszystkie wyżej wymienione skrypty powinny znajdować się w folderze <code>src</code>.</p>
+    <strong>Uwaga!</strong> Pamiętaj o utworzeniu pliku <code>.gitignore</code> i odpowiedniej jego zawartości.
+  </div>
+
+  <hr>
+
+  <ol>
+    <li>
+      Pobierz plik <a href="jp2/files/lab08/objects.js" download="objects.js"><code>objects.js</code></a>, przeanalizuj zawarty w nim kod dotyczący destrukturyzacji i wykonaj umieszczone polecenia.
+    </li>
+    <li>
+      Wykonaj zwarte w pliku <a href="jp2/files/lab08/creatingObjects.js" download="creatingObjects.js"><code>creatingObjects.js</code></a> polecenia dotyczące różnych sposobów tworzenia obiektów.
+    </li>
+    <li>
+      <em>(kolokwium 2022)</em>
+      Stwórz klasę <code>Log</code>, która będzie przechowywać historię komunikatów w aplikacji. Klasa ta powinna zawierać:
+      <ol>
+        <li>
+          Funkcję <code>write</code>, która przyjmuje dowolną liczbę argumentów i zwraca je jako string np.:
+<pre>
+<span class="c">// Input:</span>
+instancjaLog.write("test: ", () =&gt; {
+  return "komunikat";
+});
+
+<span class="c">// Output:</span>
+<span class="c">// "test: () =&gt; { return 'komunikat' }"</span>
+</pre>
+        </li>
+        <li>
+          Funkcję <code>printHistory</code>, która przyjmuje opcjonalny parametr <code>range</code>. Funkcja zwraca wszystkie komunikaty wypisane z pomocą funkcji <code>write</code>. Powinny być one zwrócone jako jeden string, gdzie poszczególne komunikaty są rozdzielone znakiem nowej linii <code>\n</code>. Parametr <code>range</code> powinien być dwuelementową tablicą, gdzie:
+          <ul>
+            <li>nie może być ujemnych liczb,</li>
+            <li>pierwszy element powinien być mniejszy od drugiego elementu,</li>
+            <li>drugi element nie powinien być większy od ilości komunikatów w historii.</li>
+          </ul>
+          Jeśli nie został przekazany do funkcji parametr <code>range</code>, to zwracane są wszystkie komunikaty w historii.
+          <pre>
+instancjaLog.printHistory(); <span class="c">// cała historia</span>
+instancjaLog.printHistory([1, 5]); <span class="c">// tylko komunikaty od 1 do 5 włącznie</span>
+instancjaLog.printHistory([5, 1]); <span class="c">// błąd</span>
+instancjaLog.printHistory([2]); <span class="c">// błąd</span>
+</pre>
+        </li>
+        <li>
+          Funkcję <code>clearHistory</code>, która usuwa wszystkie wydrukowane komunikaty (sprawia, że <code>printHistory</code> zwraca pusty string).
+<pre>
+instancjaLog.clearHistory();
+instancjaLog.printHistory(); <span class="c">// pusty string</span>
+</pre>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <em>(poprawa kolokwium 2021)</em>
+      Stwórz obiekt o nazwie <code>CoffeeShop</code> zawierający następujące zmienne: 
+      <ol>
+        <li>
+          <code>name</code> &ndash; string (nazwa sklepu)
+        </li>
+        <li>
+          <code>menu</code> &ndash; tablica obiektów, każdy z elementów zawiera:
+          <ol>
+            <li><code>item</code> (nazwa elementu), </li>
+            <li><code>type</code> (`food` lub `drink`),</li>
+            <li><code>price</code></li>
+          </ol> 
+        </li>
+        <li>
+          <code>orders</code> &ndash; na początku pusta tablica
+        </li>
+      </ol>
+      i siedem metod: 
+      <ol>
+        <li><code>addOrder</code> &ndash; dodaje nazwę elementu na koniec tablicy <code>orders</code>, jeśli istnieje w menu i zwraca komunikat "Order added!". W&nbsp;przeciwnym razie zwróć "This item is currently unavailable!"</li>
+        <li><code>fulfillOrder</code> &ndash; jeśli <code>orders</code> nie jest pustą tablicą zwróć "The {item} is ready!". Jeśli tablica jest pusta zwróć "All orders have been fulfilled!".</li>
+        <li><code>listOrders</code> &ndash; zwraca listę przyjetych zamówień, w przeciwnym wypadku pustą tablicę</li>
+        <li><code>dueAmount</code> &ndash; zwraca całkowitą należność za realizowane zamówienia.</li>
+        <li><code>cheapestItem</code> &ndash; zwraca nazwę najtańszej pozycji w menu.</li>
+        <li><code>drinksOnly</code> &ndash; zwraca tylko nazwy pozycji typu <code>drink</code> z menu.</li>
+        <li><code>foodOnly</code> &ndash; zwraca tylko nazwy pozycji typu <code>food</code> z menu.</li>
+      </ol>
+      <p>
+        Zamówienia realizowane są w kolejności FIFO (first-in, first-out)
+      </p>
+      <p>
+        Pamiętaj, aby używać <em>wyłącznie</em> funkcji wbudowanych klasy Array (oprócz funkcji <em>forEach()</em>). Iteracje <em>for</em>, <em>foreach</em> i <em>while</em> zdecydowanie odpadają.
+      </p>
+<pre>
+<span class="c">// Przykład działania:
+
+// Tworzymy sklep o nazwie "Shop1", który zawiera w menu 3 pozycje: 
+// [
+//   { item: "cinnamon roll", type: "food", price: 4.99 },
+//   { item: "hot chocolate", type: "drink", price: 2.99 }
+//   { item: "lemon tea", type: "drink", price: 2.50 }
+// ]
+// tablica zamówień jest pusta
+</span>
+
+obj.addOrder("espresso"); <span class="c">// "This item is currently unavailable!" (Sklep nie sprzedaje espresso)</span>
+
+obj.addOrder("hot chocolate"); <span class="c">// "Order added!"</span>
+obj.addOrder("cinnamon roll"); <span class="c">// "Order added!"</span>
+
+obj.listOrder(); <span class="c">// ["hot chocolate", "cinnamon roll"]</span>
+
+obj.dueAmount(); <span class="c">// 7.98 (suma cen za hot chocolate i cinnamon roll)</span>
+
+obj.fulfillOrder(); <span class="c">// "The hot chocolate is ready!"</span>
+obj.fulfillOrder(); <span class="c">// "The cinnamon roll is ready!"</span>
+obj.fulfillOrder(); <span class="c">// "All orders have been fulfilled!" (Wszystkie zamówienia zostały zrealizowane)</span>
+
+obj.listOrder(); <span class="c">// []</span>
+
+obj.dueAmount(); <span class="c">// 0.0</span>
+
+obj.cheapestItem(); <span class="c">// "lemon tea"</span>
+obj.drinksOnly(); <span class="c">// ["hot chocolate", "lemon tea"]</span>
+obj.foodOnly(); <span class="c">// ["cinnamon roll"]</span>
+</pre>
+    </li>
+    <li>
+      W pliku <a href="jp2/files/lab08/this.js" download="this.js"><code>this.js</code></a> znajdują się przykłady użycia operatora <em>this</em> w różnego typu funkcjach. Przeanalizuj je i odpowiedz na zawarte w pliku pytania.
+    </li>
+  </ol>
+</div>        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="Lab9">
+        <button class="collapsed btn btn-link" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="contentLab9" data-target="#contentLab9">
+          <h6 class="mb-0">
+            Laboratorium 9 &ndash; Obiektowość, dziedziczenie <i class="fas fa-angle-down rotate-icon"></i>
+          </h6>
+        </button>
+      </div>
+      <div id="contentLab9" class="collapse" aria-labelledby="Lab9">
+        <div class="card-body">
+          <div class="lab-content">
+  <div>
+    Utwórz projekt za pomocą komendy <code>yarn init</code>, a następnie dodaj do niego poznane na zajęciach narzędzia (oczywiście te które będziesz używać). Plik <code>package.json</code> skonfiguruj tak, aby po wpisaniu odpowiedniej komendy uruchomił się konkretny plik. 
+    <ul>
+      <li>Komenda <code>yarn zad1</code> uruchomi plik zawierający rozwiązanie zadania 1.</li>
+      <li>Komenda <code>yarn zad2</code> uruchomi plik zawierający rozwiązanie zadania 2.</li>
+      <li>Komenda <code>yarn zad3</code> uruchomi plik zawierający rozwiązanie zadania 3.</li>
+    </ul>
+    <p>Wszystkie wyżej wymienione skrypty powinny znajdować się w folderze <code>src</code>.</p>
+    <strong>Uwaga!</strong> Pamiętaj o utworzeniu pliku <code>.gitignore</code> i odpowiedniej jego zawartości.
+  </div>
+
+  <hr>
+
+  <ol>
+    <li>
+      Utwórz klasy <code>Pizza</code> i <code>Salad</code> dziedziczące po <code>Food</code> zawierającej
+      <ul>
+        <li>pola: <code>name</code> (string) i <code>ingredients</code> (tablica stringów)</li>
+        <li>metody: 
+          <ul>
+            <li><code>prepare</code> wyświetlająca komunikat: "Preparing {name}..."</li>
+            <li><code>cook</code> wyświetlająca komunikat: "Cooking {name}..."</li>
+            <li><code>serve</code> wyświetlająca komunikat: "Serving {name}..."</li>
+          </ul>
+        </li>
+      </ul>
+      Klasa <code>Pizza</code> posiadająca pole <code>toppings</code> (tablica stringów) więcej i posiadająca dodatkowo metody:
+      <ul>
+        <li><code>mix</code> wyświetlająca komunikat "Mixing pizza dough..."</li>
+        <li><code>bake</code> wyświetlająca komunikat "Baking pizza in oven..."</li>
+        <li><code>serve</code> wyświetlająca komunikat "Serving {name} with {toppings}..."</li>
+      </ul>
+
+      Klasa <code>Salad</code> posiadająca pole <code>dressing</code> (string) więcej i posiadająca dodatkowo metody:
+      <ul>
+        <li><code>mix</code> wyświetlająca komunikat "Mixing salad ingredients..."</li>
+        <li><code>serve</code> wyświetlająca komunikat "Serving {name} with {dressing} dressing......"</li>
+      </ul>
+
+      <pre>
+<span class="c">// Przykładowe działanie</span>
+const pizza = new Pizza("Margherita", ["flour", "tomatoes", "mozzarella"], ["basil"]);
+pizza.prepare();
+pizza.mix();
+pizza.bake();
+pizza.serve();
+<span class="c">// Output:</span>
+<span class="c">// Preparing Margherita...</span>
+<span class="c">// Mixing pizza dough...</span>
+<span class="c">// Baking pizza in oven...</span>
+<span class="c">// Serving Margherita with basil...</span>
+
+const salad = new Salad("Caesar", ["lettuce", "croutons", "Parmesan cheese"], "Caesar");
+salad.prepare();
+salad.mix();
+salad.serve();
+<span class="c">// Output:</span>
+<span class="c">// Preparing Caesar...</span>
+<span class="c">// Mixing salad ingredients...</span>
+<span class="c">// Serving Caesar with Caesar dressing...</span></pre>
+    </li>
+    <li>
+      <em>(poprawa kolokwium 2022)</em>
+      Celem zadania będzie ukończenie prostej gry żeglarskiej. Gra składa się&nbsp;z:
+      <ul>
+        <li>planszy (klasa <code>Grid</code>)</li>
+        <li>kafelka (klasa <code>Tile</code>)</li>
+        <li>statku (klasa <code>Ship</code>)</li>
+      </ul>
+      Plansza jest zbudowana w oparciu o kwadraty, nazywane kafelkami. Przykładowo, jeżeli plansza ma rozmiar 4x4 oznacza to, że składa się z 16 kafelków (16 instancji klasy <code>Tile</code>).
+      <pre>
+class Tile {
+  type = null;
+  x = null;
+  y = null;
+}
+
+class Grid {
+  height = null; <span class="c">// liczba całkowita</span>
+  width = null; <span class="c">// liczba całkowita</span>
+  grid = null; <span class="c">// tablica dwuwymiarowa</span>
+  ships = null; <span class="c">// tablica jednowymiarowa</span>
+}
+
+class Ship {
+  direction = null; <span class="c">// string</span>
+  x = null; <span class="c">// liczba całkowita</span>
+  y = null; <span class="c">// liczba całkowita</span>
+  grid = null; <span class="c">// obiekt klasy Grid</span>
+}
+
+<span class="c">// Funkcja losująca typ kafelka:</span>
+const types = ["LAND", "WATER", "ICE"];
+const itemType = types[Math.floor(Math.random() * types.length)];
+</pre>
+      Uzupełnij klasę <code>Tile</code> o:
+      <ul>
+        <li>konstruktor, który przyjmuje parametry <code>x</code>, <code>y</code> oraz <code>type</code>. X i Y to koordynaty kafelka na planszy, a <code>type</code> może przyjmować tylko wartości "LAND", "WATER" i "ICE". Wartości parametrów powinny zostać przypisane do zmiennych istniejących w klasie.</li>
+        <li>funkcję <code>getTileInfo</code>, która zwraca koordynaty i typ kafelka jako string</li>
+      </ul>
+      Uzupełnij klasę <code>Grid</code> o:
+      <ul>
+        <li>funkcję <code>generate</code>, która przyjmuje jako parametry: <code>height</code> i <code>width</code> (będące liczbami całkowitymi). Parametry nadają wartość zmiennym istniejącym w klasie. Oprócz tego funkcja powinna tworzyć planszę o podanych rozmiarach, poprzez inicjalizację tablicy dwuwymiarowej <code>Grid</code>. Każdy element planszy musi być obiektem klasy <code>Tile</code> o określonym typie ("LAND", "WATER" albo "ICE"). Typ powinien być losowy dla każdego elementu.</li>
+        <li>funkcję <code>generatePredefined</code>, która przyjmuje jako parametry <code>height</code>, <code>width</code> oraz <code>predefinedTiles</code>. Funkcja ta działa analogicznie jak poprzednia, z tą różnicą, że w wybranych przez nas miejscach wstawimy przygotowane przez siebie kafelki. <code>PredefinedTiles</code> to tablica obiektów klasy <code>Tile</code>, które to wstawia w wybranych miejscach planszy (np. jeżeli obiekt klasy <code>Tile</code> ma wartości: x = 10 i y = 20), to na planszy w koordynatach 10 i 20 ma zostać wstawiony dany kafelek.</li>
+        <li>funkcję <code>getTile</code> z parametrami x i y &ndash; funkcja zwraca kafelek w danych koordynatach. Jeżeli w danych koordynatach nie istnieje żaden kafelek, to zostaje zwrócone <code>null</code>.</li>
+      </ul>
+      <pre>
+<span class="c">// Przykład użycia:</span>
+const grid = new Grid();
+grid.generate(10, 10); <span class="c">// generuje planszę o wymiarach 10 x 10</span>
+console.log(grid.getTile(2, 2).getTileInfo()) <span class="c">// 2,2 LAND</span>
+grid.generate(10, 5); <span class="c">// na nowo generuje planszę o wymiarach 10 x 5</span>
+
+const predefTiles = [
+  new Tile(1, 2, "LAND"),
+  new Tile(2, 2, "WATER"),
+  new Tile(5, 5, "ICE")
+];
+
+grid.generatePredefined(10, 10, predefTiles);
+console.log(grid.getTile(2, 2).getTileInfo()) <span class="c">// 2,2 WATER</span>
+</pre>
+      Uzupełnij klasę <code>Ship</code> o:
+      <ul>
+        <li>konstruktor, który przyjmuje parametry: <code>direction</code> &ndash; czyli w jakim kierunku jest zwrócony aktualnie statek ("N", "S", "E" lub "W"), <code>x</code> i&nbsp;<code>y</code> &ndash; aktualne koordynaty statku, <code>grid</code> &ndash; plansza, na której jest umieszczony statek. Statek nie może pojawić się na kafelku oznaczonym "LAND" lub "ICE". Statek zostaje również wtedy dodany do tablicy "ships" w obiekcie <code>grid</code>.</li>
+        <li>funkcję <code>turn</code>, która będzie zmieniać kierunek statku (ale nadal będzie pozostawał na tym samym kafelku). Obracać może się zgodnie lub przeciwnie do ruchu wskazówek zegara.</li>
+        <li>funkcję <code>sail</code>, która będzie przesuwała statek o jeden kafelek w aktualnym kierunku statku. Zadbaj o to, żeby statek nie mógł się poruszyć na kafelek typu "LAND" lub "ICE" &ndash; program powinien wtedy wyświetlać odpowiedni komunikat. Statek nie powinien móc również wypłynąć poza planszę, ani też uderzyć o inny statek (na planszy może być kilka statków).</li>
+        <li>funkcję <code>getShipInfo</code>, która zwraca kierunek oraz koordynaty statku jako string.</li>
+      </ul>
+      <pre>
+<span class="c">// Przykład użycia:</span>
+const ship = new Ship(2, 4, "N", grid);
+const ship2 = new Ship(1, 2, "N", grid); <span class="c">// błąd</span>
+
+ship.turn("P"); <span class="c">// Statek obrócony o 90 st. w prawo</span>
+ship.sail(); <span class="c">// Statek poruszył się o 1 kafelek na wschód</span>
+ship.sail(); <span class="c">// Statek napotkał ląd, pozostał w miejscu</span>
+ship.turn("L") <span class="c">// Statek obrócony o 90 st. w lewo</span>
+ship.sail(); <span class="c">// Statek napotkał inny statek, pozostał w miejscu</span>
+</pre>
+      Stwórz klasę <code>IcebreakerShip</code>, która dziedziczy po klasie <code>Ship</code>. Uzupełnij ją o:
+      <ul>
+        <li>konstruktor, który przyjmuje <code>x</code> i&nbsp;<code>y</code> &ndash; aktualne pozycje lodołamacza oraz <code>grid</code> &ndash; planszę statku. Statek ten zawsze pojawia się skierowany na północ.</li>
+        <li>funkcja <code>turn</code> powinna obracać kierunek statku o 180 stopni.</li>
+        <li>funkcja <code>sail</code> powinna umożliwiać poruszanie się zarówno po kafelkach o typie "WATER" jak i "ICE". Jeśli statek trafi na pole o typie "LAND" automatycznie się obraca o 90 stopni zgodnie z ruchem wskazówek zegara (wywołuje funkcję <code>turn</code> z klasy <code>Ship</code>).</li>
+      </ul>
+      <pre>
+<span class="c">// Przykład użycia:</span>
+const icebreaker = new Icebreaker(3, 5, grid);
+
+icebreaker.sail(); <span class="c">// Statek napotkał lądolód, przedarł się przez niego</span>
+console.log(icebreaker.getShipInfo()); <span class="c">// "N", 3,6</span>
+</pre>
+      Dodatkowo, w odpowiednim miejscu dopisz funkcje <code>printGrid</code>, która zwraca planszę (jako string) ze wszystkimi znajdującymi się elementami, gdzie:
+      <ul>
+        <li>"~" &ndash; będzie oznaczać pole "WATER"</li>
+        <li>"x" &ndash; będzie oznaczać pole "ICE"</li>
+        <li>"o" &ndash; będzie oznaczać pole "LAND"</li>
+        <li>"N", "S", "E" lub "W" będzie oznaczać statek odwrócony w odpowienim kierunku</li>
+      </ul>
+      <pre>
+<span class="c">// Przykładowy output:</span>
+~ ~ ~ ~ ~ o
+~ ~ x E ~ o
+S ~ ~ ~ ~ ~
+o o ~ ~ ~ ~
+</pre>
+    </li>
+    <li>
+      Utwórz klasy <code>Person</code> i <code>Animal</code> dziedziczące po <code>Creature</code> oraz klasy <code>Child</code> i <code>Adult</code> dziedziczące po klasie <code>Person</code>. Każda z tych klas powinna mieć podstawowe właściwości i metody, takie jak imię (<code>name</code>), wiek (<code>age</code>), płeć (<code>gender</code>), poziom energii (<code>energy</code> &ndash; przyjmujący domyślnie 5, maksymalnie 10) i stan emocjonalny (<code>mood</code> &ndash; przyjmujący domyślnie wartość "relaxed"). Klasa <code>Animal</code> powinna mieć dodatkowe właściwości, takie jak rodzaj (<code>type</code>), a&nbsp;klasa <code>Child</code> dodatkowe właściwości, takie jak poziom szczęścia (<code>happiness</code>).<br><br>
+      Zaimplementuj poniższe metody uwzględniając zmianę m.in. wartości <code>energy</code> i <code>mood</code> i&nbsp;spełniającą poniższe warunki (do poniższych dopisz własne, aby metody były w miarę możliwości rozbudowane):
+      <ul>
+        <li>Child
+          <ul>
+            <li><code>learn()</code>&ndash; uczy się czegoś nowego (zmniejsza wartość <code>energy</code>)</li>
+            <li><code>play()</code>&ndash; bawi się (zwiększa poziom <code>happiness</code>, zmniejsza poziom <code>energy</code> i ustawia <code>mood</code> na "happy")</li>
+            <li><code>sleep()</code>&ndash; śpi (zwiększa poziom <code>energy</code> o np. maksymalnie 5, nie może przekroczyć 10)</li>
+            <li><code>eat()</code>&ndash; je (zmienia wartość <code>mood</code> na "good")</li>
+          </ul>
+        </li>
+        <li>Adult
+          <ul>
+            <li><code>work()</code> &ndash; idzie do pracy (zmniejsza poziom <code>energy</code> i&nbsp;ustawia <code>mood</code> na "tired")</li>
+            <li><code>rest()</code> &ndash; odpoczywa (ustawia <code>mood</code> na "relaxed")</li>
+            <li><code>cook()</code> &ndash; gotuje posiłek</li>
+            <li><code>eat()</code> &ndash; je</li>
+          </ul>
+        </li>
+        <li>Animal
+          <ul>
+            <li><code>eat()</code> &ndash; je</li>
+            <li><code>drink()</code> &ndash; pije</li>
+            <li><code>run()</code> &ndash; biega</li>
+            <li><code>sleep()</code> &ndash; idzie spać</li>
+          </ul>
+        </li>
+      </ul>
+      Zwróć uwagę, aby ustawione wartości nie mogły być ujemne, a poziomy szczęścia czy energii większe niż 10. Dodatkowo dodaj odpowiednie komunikaty, aby było wiadomo, co się dzieje. Na koniec zwróć uwagę na jakość swojego rozwiązania, czy nie powielasz fragmentów kodu, czy pewne elementy można wydzielić? Stwórz rozwiązanie, jak najbardziej reużywalne. Być może niektóre metody można przenieść wyżej?
+<pre>
+<span class="c">// Przykładowa interakcja z obiektami:</span>
+child.play(); // Adam is playing!
+adult.work(); // Anna is going to work!
+dog.run(); // Reks is running!
+</pre>
+    </li>
+  </ol>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="Lab10">
+        <button class="collapsed btn btn-link" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="contentLab10" data-target="#contentLab10">
+          <h6 class="mb-0">
+            Laboratorium 10 &ndash; Kolokwium (11.05.2023) + zadania dodatkowe <i class="fas fa-angle-down rotate-icon"></i>
+          </h6>
+        </button>
+      </div>
+      <div id="contentLab10" class="collapse" aria-labelledby="Lab10">
+        <div class="card-body">
+          <p>
+            <strong><a href="jp2/results/gr1-kolo1.pdf">Wyniki kolokwium</a></strong>
+          </p>
+          <p>
+            Termin kolokwium: <strong>czwartek, 11.05.2023</strong><br>
+            godz. 12:00, s. 3.04
+          </p>
+          <p>
+            Osoby mające w tym czasie lektorat: 285752, 285810, 285733, 285770 <br>
+            godz. 10:00, s. 3.04
+          </p>
+          <hr>
+<p>Kolokwium będzie składać się z <em>dwóch</em> części.</p>
+<ol>
+  <li>Na kartkach – mogą korzystać Państwo tylko ze swoich notatek (notatki kolegi / koleżanki nie wchodzą w grę) czy innych materiałów w formie papierowej, komputery są wyłączone. </li>
+  <li>Przy komputerze – mają Państwo dostęp do wszystkiego z wyłączeniem przeglądarki internetowej i komunikacji między sobą. Z dokumentacji można korzystać, ale z&nbsp;tej wbudowanej w VS Code (nie przeglądarkowej). Można korzystać zarówno z notatek w formie papierowej, jak i z materiałów znajdujących się na komputerze. Można pobrać zmiany z repozytorium, ale musi się to odbyć na początku kolokwium.</li>
+</ol>
+<p>Kolokwium odbywa się na komputerach uczelnianych i nie ma możliwości pisania na własnym sprzęcie.</p>
+<p>Mogą sobie Państwo przygotować projekt wcześniej, przed kolokwium i wrzucić go na repozytorium, jednak dopiero na kolokwium dowiedzą się Państwo, co będzie potrzebne i jakie pliki będzie należało wysłać jako rozwiązanie.</p>
+<hr>
+<p>
+  Materiał obowiązujący na kolokwium: 
+</p>
+<ul>
+  <li>scope, hoisting</li>
+  <li>funkcje (+ currying, IIFE)</li>
+  <li>funkcje wbudowane (reduce, map, filter, some, itd.)</li>
+  <li>tworzenie projektu za pomocą yarna + konfiguracja go (podłączanie jakichkolwiek paczek np. lodash jest opcjonalne)</li>
+  <li>obiektowość i dziedziczenie</li>
+</ul>
+<hr>
+<div class="lab-content">
+  <p>
+    <u>Zadania dodatkowe</u>
+  </p>
+  <ol>
+    <li>
+      <em>(poprawa kolokwium 2021)</em>
+      W pliku <a href="jp2/files/lab10/potter.js" download="potter.js"><code>potter.js</code></a> znajduje się tablica postaci z&nbsp;Harry'ego Pottera. 
+      <ul>
+        <li>Pogrupuj je według „domu” do jakiego przynależą (weź pod uwagę tylko osoby oznaczone jako żyjące). Jeśli postać nie ma podanego domu powinna znajdować się pod kluczem "noHouse".</li>
+        <li>Nowy obiekt powinien zawierać jedynie klucze z imieniem i typem. Typ powinien być jedną z wartości: <code>student</code>, <code>staff</code> lub <code>none</code> (jeśli postać nie jest ani nauczycielem ani studentem).</li>
+      </ul>
+      Pamiętaj, aby używać <em>wyłącznie</em> funkcji wbudowanych klasy Array (oprócz funkcji <code>.forEach()</code>), <code>for</code>, <code>foreach</code> i <code>while</code> zdecydowanie odpada. <br>
+      Zadanie rozwiąż uzupełniając poniższy kod, tak aby otrzymać poniżej zaprezentowany wynik. 
+      <pre>
+const resultArray = hogwardArray.reduce((prev, curr) => {
+  <span class="c">// Uzupełnij tutaj</span>
+}, []);
+</pre>
+<pre>
+<span class="c">// Oczekiwany output</span>
+{
+  Gryffindor: [
+    { name: 'Harry Potter', type: 'student' },      
+    <span class="c">// ...</span>
+  ],
+  Slytherin: [
+    { name: 'Draco Malfoy', type: 'student' },
+    { name: 'Horace Slughorn', type: 'staff' },
+    { name: 'Dolores Umbridge', type: 'staff' },
+    { name: 'Lucius Malfoy', type: 'none' },
+    { name: 'Gregory Goyle', type: 'student' }
+  ],
+  <span class="c">// ...</span>
+  noHouse: [
+    { name: 'Kingsley Shacklebolt', type: 'none' },
+    <span class="c">// ...</span>
+  ]
+}
+</pre>
+    </li>
+    <li>
+      <em>(modyfikacja zadania 1.)</em>
+      W pliku <a href="jp2/files/lab10/potter.js" download="potter.js"><code>potter.js</code></a> znajduje się tablica postaci z Harry'ego Pottera. Pogrupuj je według „domu” do jakiego przynależą (jeśli wartość <code>house</code> wynosi <code>null</code> postać powinna znaleźć się pod kluczem <code>noHouse</code>). Następnie dla każdego z kluczy pod odpowiednimi wartościami stwórz obiekty, których kluczami są:
+      <ul>
+        <li><code>staff</code> &ndash; jeśli <code>hogwartsStaff</code> wynosi <code>true</code></li>
+        <li><code>students</code> &ndash; jeśli <code>hogwartsStudent</code> wynosi <code>true</code></li>
+        <li>i/lub <code>none</code> (jeśli obie wartości: <code>hogwartsStaff</code> i <code>hogwartsStudent</code> wynoszą <code>false</code>).</li>
+      </ul>
+      Pod konkretnym kluczem powinna znaleźć się tablica stringów (<code>name</code> postaci). <br>
+      Pamiętaj, aby używać <em>wyłącznie</em> funkcji wbudowanych klasy Array (oprócz funkcji <code>.forEach()</code>), <code>for</code>, <code>foreach</code> i <code>while</code> zdecydowanie odpada.
+      <pre>
+<span class="c">// Oczekiwany wynik</span>
+{
+  Gryffindor: {
+    students: ['Harry Potter', 'Hermione Granger', 'Ron Weasley', ... ],
+    staff: [ 'Minerva McGonagall', 'Rubeus Hagrid', 'Remus Lupin' ],
+    none: [ 'Sirius Black', 'Arthur Weasley' ]
+  },
+  Slytherin: {
+    students: [ 'Draco Malfoy', 'Vincent Crabbe', 'Gregory Goyle' ],
+    staff: [ 'Severus Snape', 'Horace Slughorn', 'Dolores Umbridge' ],
+    none: [ 'Bellatrix Lestrange', 'Lord Voldemort', 'Lucius Malfoy' ]
+  },
+  Ravenclaw: {
+    students: [ 'Cho Chang', 'Luna Lovegood' ]
+  },
+  Huffelpuff: {
+    students: [ 'Cedric Diggory' ]
+  },
+  noHouse: {
+    none: [ 'Kingsley Shacklebolt' ],
+    staff: [ 'Mrs Norris', 'Argus Filch' ]
+  }
+}
+</pre>
+    </li>
+    <li>
+      <em>(kolokwium 2020 &ndash; bez asynchroniczności)</em>
+      Zdefiniuj:
+      <ol>
+        <li>
+          Konstruktor klasy <code>Vector2</code> posiadający:
+          <ul>
+            <li>pola <code>x</code> i <code>y</code></li>
+            <li>
+              funkcje
+              <ul>
+                <li>
+                  <code>diff(vector)</code> &ndash; odejmuje aktualny wektor od
+                  wektora podanego w argumencie
+                </li>
+                <li>
+                  <code>multiplyBy(number)</code> &ndash; mnoży <code>x</code> i
+                  <code>y</code> wektora razy liczbę podaną w argumencie
+                </li>
+                <li>
+                  <code>toString()</code> &ndash; zwraca tekst w formacie "x: {wartość} y: {wartość}"
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <pre>
+const vector1 = new Vector2(10, 10);
+const vector2 = new Vector2(5, 10);
+
+console.log(vector1.toString()); <span class="c">// x: 10 y: 10</span>
+
+vector1.diff(vector2);
+console.log(vector1.toString()); <span class="c">// x: 5 y: 0</span>
+
+vector1.multiplyBy(2);
+console.log(vector1.toString()); <span class="c">// x: 10 y: 0</span>
+</pre>
+        </li>
+        <li>
+          Konstruktor klasy <code>Ship</code> o następujących:
+          <ul>
+            <li>
+              polach:
+              <ul>
+                <li><code>faction</code></li>
+                <li><code>position</code> &ndash; typu <code>Vector2</code></li>
+                <li><code>strength</code></li>
+                <li><code>health</code></li>
+              </ul>
+            </li>
+            <li>
+              funkcjach:
+              <ul>
+                <li>
+                  <code>getDistance(enemyShip)</code> &ndash; jeśli to możliwe,
+                  oblicza dystans dzielący dwa statki (różnicę wektorów). W
+                  przeciwnym wypadku wypisuje komunikat błędu
+                </li>
+                <li>
+                  <code>checkHealth()</code> &ndash; sprawdza, czy zdrowie
+                  statku spadło poniżej 0. Jeśli tak wypisuje w konsoli
+                  odpowiedni komunikat
+                </li>
+                <li>
+                  <code>getDamage(amount)</code> &ndash; obniża liczbę punktów
+                  zdrowia o podaną liczbę i sprawdza, czy statek został
+                  zniszczony
+                </li>
+                <li>
+                  <code>makeDamage(enemyShip)</code> &ndash; zadaje obrażenia
+                  statkowi podanemu w argumencie (o wartość zmiennej
+                  <code>strength</code>)
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          Klasę <code>RebelShip</code> dziedziczącą po <code>Ship</code>:
+          <ul>
+            <li>
+              Niech konstruktor przyjmuje parametry: <code>position</code>,
+              <code>strength</code>, <code>health</code>.
+            </li>
+            <li>
+              Wartość <code>faction</code> powinna być na stałe ustawiona jako
+              'Rebel Alliance'.
+            </li>
+            <li>
+              Zdefiniuj funkcję <code>hyperspeed()</code> &ndash; ustawia wartość <code>position</code> na <code>undefined</code>
+            </li>
+          </ul>
+        </li>
+        <li>
+          Klasę <code>DeathStar</code> dziedziczącą po <code>Ship</code>
+          <ul>
+            <li>
+              Niech konstruktor przyjmuje parametr: <code>position</code>
+            </li>
+            <li>
+              Niech <code>faction</code> będzie ustawiony na stałe na 'Empire'.
+            </li>
+            <li>
+              Niech klasa zawiera następujące pola:
+              <code>deathRayAvailable</code>
+            </li>
+            <li>
+              Zawierającą funkcje <code>makeDamage(enemyShip)</code>, która wywołuje funkcje odziedziczoną po <code>Ship</code>
+            </li>
+          </ul>
+        </li>
+      </ol>
+      <pre>
+<span class="c">// Przykładowe działanie:</span>
+gwiazdaSmierci.makeDamage(statekRebeli);
+Statek Rebelii otrzymał obrażenia równe: 10
+Statek Rebelii został zniszczony
+</pre>
+      W razie potrzeby można zadeklarować zmienne i funkcje pomocnicze w klasie <code>DeathStar</code>.
+    </li>
+    <li>
+      Napisz funkcję <code>multiply</code> z dwoma parametrami: <code>x</code> i <code>y</code>, która będzie zwracała funkcję pobierającą jeden parametr <code>z</code>. Zwrócona funkcja powinna wykonać mnożenie <code>x</code> i <code>y</code> z parametrem <code>z</code> oraz zwrócić wynik. Wywołaj funkcję <code>multiply</code> za pomocą jednego wyrażenia.
+      <pre>
+<span class="c">// Przykładowe działanie:</span>
+const result = multiply(2, 3)(5);
+
+console.log(result); <span class="c">// oczekiwany wynik: 30</span>
+</pre>
+    </li>
+  </ol>
+</div>        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="Lab11">
+        <button class="collapsed btn btn-link" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="contentLab11" data-target="#contentLab11">
+          <h6 class="mb-0">
+            Laboratorium 11 &ndash; Event Loop + Promises <i class="fas fa-angle-down rotate-icon"></i>
+          </h6>
+        </button>
+      </div>
+      <div id="contentLab11" class="collapse" aria-labelledby="Lab11">
+        <div class="card-body">
+          <div class="lab-content">
+  <div>
+    <p><strong>Zanim zaczniesz</strong></p>
+    Czy wiesz czym się różni <code>setInterval</code> od <code>setTimeout</code>?
+  </div>
+  <hr>
+  <ol>
+    <li>
+      Dopisz pomiędzy deklaracją funkcji a poleceniem console.log instrukcję wywołania <code>helloWorld()</code> tak, aby na ekranie pojawiło się jako pierwsze "No, hello universe!". <em>Nie możesz dopisać nic za console.log!</em>
+      <pre>
+function helloWorld() {
+  console.log('Hello world!');
+}
+
+<span class="c">// Uzupełnij</span> 
+
+console.log('No, hello universe!');  
+</pre>
+    </li>
+    <li>
+      Napisz funkcję, która wypisze w konsoli "Start!"" i po dwóch sekundach wypisze "Koniec".
+    </li>
+    <li>
+      Napisz funkcję, która wypisuje "Welcome" co sekundę w nieskończoność.
+    </li>
+    <li>
+      Napisz funkcję, która wypisuje "Welcome" co sekundę, ale tylko przez 5 sekund. 
+      <button class="btn btn-link btn-sm" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+        Podpowiedź
+      </button>
+      
+      <div class="collapse" id="collapse1">
+        <strong>Podpowiedź:</strong> Użyj clearInterval
+      </div>
+    </li>
+    <li>
+      Napisz funkcję, która przyjmuje trzy argumenty: funkcję i dwie liczby (<code>x</code>, <code>y</code>). Funkcja będzie wywołała podaną w argumencie funkcję, co <code>x</code> sekund i automatycznie zatrzyma się po upływie <code>y</code> sekund. 
+    </li>
+    <li>
+      Stwórz obiekt klasy <code>Promise</code>, który kończy się powodzeniem po 5 sekundach i zwróca napis "Udało się!". Jako callback  wypisz zwrócony string w konsoli.
+      <button class="btn btn-link btn-sm" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+        Podpowiedź
+      </button>
+      
+      <div class="collapse" id="collapse2">
+        <strong>Podpowiedź:</strong> Za sukces odpowiada <code>resolve</code>.
+      </div>
+    </li>
+    <li>
+      Stwórz nowy <code>Promise</code>, który tym razem zamiast z sukcesem, zakończy się porażką i zwróci komunikat "Porażka". Przetestuj dwa rozwiązania:
+      <ul>
+        <li>Skorzystaj z <code>then()</code>, aby obsłużyć błąd.</li>
+        <li>Zamiast <code>then()</code>, zmodyfikuj powyższy kod używając <code>catch()</code></li>
+      </ul>
+    </li>
+    <li>
+      Napisz funkcję <code>multiplyAsync(x,y)</code>, która zwraca obiekt klasy <code>Promise</code> kończący się porażką, gdy któryś z argumentów jest niepoprawny (nie jest liczbą). W przeciwnym przypadku zwraca iloczyn dwóch liczb. Napisz callback, który wypisuje wynik w konsoli.
+    </li>
+    <li>
+      <em>(kolokwium 2020)</em>
+      Zaimplementuj funkcję <code>counter</code>, która przyjmuje jako parametry dwie liczby i zwraca funkcję. Kiedy zwracana funkcja jest wywołana, w konsoli powinny zostać wyświetlone wszystkie liczby pomiędzy 1 i pierwszym parametrem w odstępie ilości milisekund podanych jako drugi parametr. Rozwiązanie musi być zawarte w jednej funkcji (nie licząc zwracanej i wewnętrznych lambd). 
+    </li>
+    <li>
+      <em>(zadanie dodatkowe &ndash; nie będzie tego typu zadań na kolokwium)</em>
+      Stwórz prostą stronę zawierającą 3 przyciski: "Start", "Stop" i "Wyczyść". Następnie dodaj do niej skrypt <code>script.js</code> zawierający trzy metody:
+      <ol>
+        <li><code>startCounter()</code> &ndash; inkrementującą licznik, co sekundę</li>
+        <li><code>stopCounter()</code> &ndash; zatrzymującą licznik</li>
+        <li><code>clearCounter()</code> &ndash; zerujący licznik</li>
+      </ol>
+      Każdy z przycisków po naciśnięciu powienien wywoływać odpowiednią funkcję. W tym celu dodaj do przycisku atrybut <code>onclick</code>. Np. <pre>&lt;button onclick="function()"&gt;&lt;/button&gt;</pre> 
+      Licznik po zatrzymaniu i ponownym uruchomieniu powinien inkrementować liczbę, jaka została ostatnio wyświetlona. Wynik działania tego prostego programu powinien być wyświetlany w konsoli w przeglądarce. <br>
+      Jeżeli chcesz rozbudować to zadanie, możesz wyświetlać licznik na stronie.
+
+      <button class="btn btn-link btn-sm" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+        Podpowiedź
+      </button>
+      
+      <div class="collapse" id="collapse3">
+        <strong>Podpowiedź:</strong> Aby zmieniać wartość wyświetlaną na stronie trzeba ingerować w&nbsp;<a href="https://www.w3schools.com/js/js_htmldom.asp" target="_blank" rel="noopener noreferrer">DOM</a>. Interesuje nas jeden, konkretny element zawierający w sobie licznik, więc najbezpieczniej byłoby dodać do niego id (zmieniamy zawartość jednego, unikalnego elementu). Wtedy możemy odwołać się do tego elementu poprzez podaną wartość i następnie po nim (id) zmienić zawartość znacznika HTML (<a href="https://www.w3schools.com/js/js_htmldom_methods.asp" target="_blank" rel="noopener noreferrer">przykład</a>).
+      </div>
+    </li>
+  </ol>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="Lab12">
+        <button class="collapsed btn btn-link" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="contentLab12" data-target="#contentLab12">
+          <h6 class="mb-0">
+            Laboratorium 12 &ndash; Promises + axios (fetch)<i class="fas fa-angle-down rotate-icon"></i>
+          </h6>
+        </button>
+      </div>
+      <div id="contentLab12" class="collapse" aria-labelledby="Lab12">
+        <div class="card-body">
+          <div class="lab-content">
+  <ol>
+    <li>
+      Stwórz projekt(y):
+      <ul>
+        <li><code>axios</code></li>
+        <li><code>fetch</code> (dla chętnych &ndash; drugi sposób na pobieranie zapytań)</li>
+      </ul>
+      a następnie wykonaj polecenia zawarte w pliku <code>index.js</code> odpowiednie dla każdego projektu:
+      <ul>
+        <li>
+          dla projektu <code>axios</code> zadania z pliku <a href="jp2/files/lab12/promises-axios.js" download="index.js"><code>index.js</code></a>
+        </li>
+        <li>
+          (dla chętnych) dla projektu <code>fetch</code> zadania z pliku <a href="jp2/files/lab12/promises-fetch.js" download="index.js"><code>index.js</code></a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      Wykorzystując endpointy <code>/posts/N</code> oraz <code>/posts/N/comments</code> dostępne pod adresem: <pre>https://jsonplaceholder.typicode.com/</pre> oraz bibliotekę <code>axios</code> zaimplementuj niżej opisaną funkcjonalność:
+      <ul>
+        <li>Losuje 5 liczb z przedziału [0..99], które będą służyły jako identyfikatory „wpisów”</li>
+        <li>Z pomocą wymienionych powyżej usług – używając metody GET – pobiera wylosowane wpisy oraz listy powiązanych z nimi komentarzy</li>
+        <li>Przetwarza otrzymane dane tak, aby otrzymać tablicę obiektów JSON-owych postaci:
+          <pre>
+[
+  {
+    "entry": {
+      "title": "title 1",
+      "body": "expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum"
+    },
+    "comments": [
+      {
+        "name": "id labore ex et quam laborum",
+        "email": "Eliseo@gardner.biz",
+        "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora"
+      },
+      <span class="c">// ...</span>
+      {
+        "name": "odio adipisci rerum aut animi",
+        "email": "Nikita@garfield.biz",
+        "body": "quia electus saepe quia accusamus maiores nam est\ncum et ducimus et vero voluptates"
+      }
+    ]
+  },
+  <span class="c">// ...</span>
+  {
+    "entry": {
+      "title": "title 5",
+      "body": "molestiae ut ut quas totam\nnostrum rerum"
+    },
+    "comments": [
+      {
+        "name": "id labore ex et quam laborum",
+        "email": "John@yellow.biz",
+        "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora"
+      },
+      <span class="c">// ...</span>
+      {
+        "name": "odio adipisci rerum aut animi",
+        "email": "Maria@targo.biz",
+        "body": "quia electus saepe quia accusamus maiores nam est\ncum et ducimus et vero voluptates"
+      }
+    ]
+  }
+]</pre>
+        </li>
+        <li>Wypisuje zawartość powyższej tablicy na standardowym wyjściu.</li>
+      </ul>
+    </li>
+    <li>
+      <em>(kolokwium 2022)</em>
+      Napisz funkcję (nie korzystając z mechanizmu async/await):
+<pre>
+const poKolei = (fun1, fun2, fun3, cb) => {
+  <span class="c">// Uzupełnij</span>
+};
+</pre>
+      taką, że:
+      <ul>
+        <li>Jej trzema pierwszymi argumentami są funkcje zwracające promise &ndash; możesz założyć, że funkcje te muszą być przygotowane na przyjęcie określonej listy argumentów, z których korzystać będzie <code>poKolei</code>.</li>
+        <li>Funkcja <code>poKolei</code> powinna zapewnić, że <code>fun3</code> wykona się po <code>fun2</code>, która wykona się zawsze po <code>fun1</code>. Wyniki wygenerowane przez <code>fun1</code> zostaną przekazane do <code>fun2</code>, a wynik <code>fun2</code> zostanie przekazany do <code>fun3</code>.</li>
+        <li>Czwartym argumentem funkcji jest „callback” <code>cb</code>, czyli funkcja, której zadaniem jest przetworzenie wyników zwracanych przez <code>fun3</code>.</li>
+        <li>Jeżeli którykolwiek z promise'ów zakończy się porażką, funkcja ma dalej kontynuować swoje zadanie.</li>
+      </ul>
+    </li>
+    <li>
+      <em>(poprawa kolokwium 2020)</em>
+      Napisz funkcję bez użycia iteracji, która sprawdza co sekundę, czy podany w argumencie czas już minął. Jeśli minął, drukujemy w konsoli komunikat "Czas upłynął" i przypisujemy aktualny czas do zmiennej <code>czasSukces</code> i drukujemy go w&nbsp;konsoli. Drugi argument w&nbsp;funkcji odpowiada maksymalnej liczbie prób sprawdzenia. Jeśli przekroczyliśmy liczbę prób, drukujemy w konsoli komunikat "Limit prób przekroczony" i&nbsp;wywołujemy funkcję jeszcze raz, tylko z mniejszym czasem (pomniejszonym o konkretną ustaloną przez nas wartość). <br>
+<pre>
+let czasSukces;
+
+const checkTime = (arg, maxTries) => {
+
+}
+
+console.log(czasSukces); <span class="c">// Wywołanie musi być zawarte poza funkcją checkTime</span>
+</pre>
+<pre>
+<span class="c">// Przykładowy output w konsoli </span>
+
+Sprawdzam ponownie
+Sprawdzam ponownie
+Sprawdzam ponownie
+Sprawdzam ponownie
+Sprawdzam ponownie
+Limit prób przekroczony
+Sprawdzam ponownie
+Sprawdzam ponownie
+Czas upłynął '22:21'! <span class="c">// lub jakikolwiek inny format czasu</span> 
+</pre>
+    </li>
+    <li>
+      <em>(kolokwium 2020 &ndash; pełne zadanie)</em>
+      Zdefiniuj:
+      <ol>
+        <li>
+          konstruktor klasy <code>Vector2</code> posiadający:
+          <ul>
+            <li>pola <code>x</code> i <code>y</code></li>
+            <li>
+              funkcje
+              <ul>
+                <li>
+                  <code>diff(vector)</code> &ndash; odejmuje aktualny wektor od wektora podanego w argumencie
+                </li>
+                <li>
+                  <code>multiplyBy(number)</code> &ndash; mnoży <code>x</code> i <code>y</code> wektora razy liczbę podaną w argumencie
+                </li>
+                <li>
+                  <code>toString()</code> &ndash; zwraca tekst w formacie "x: {wartość} y: {wartość}"
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          konstruktor klasy <code>Ship</code> o następujących:
+          <ul>
+            <li>
+              polach:
+              <ul>
+                <li><code>faction</code></li>
+                <li><code>position</code> &ndash; typu <code>Vector2</code></li>
+                <li><code>strength</code></li>
+                <li><code>health</code></li>
+              </ul>
+            </li>
+            <li>
+              funkcjach:
+              <ul>
+                <li>
+                  <code>getDistance(enemyShip)</code> &ndash; jeśli to możliwe, oblicza dystans dzielący dwa statki (różnicę wektorów). W przeciwnym wypadku wypisuje komunikat błędu
+                </li>
+                <li>
+                  <code>checkHealth()</code> &ndash; sprawdza, czy zdrowie statku spadło poniżej 0. Jeśli tak wypisuje w konsoli odpowiedni komunikat
+                </li>
+                <li>
+                  <code>getDamage(amount)</code> &ndash; obniża liczbę punktów zdrowia o podaną liczbę i sprawdza, czy statek został zniszczony
+                </li>
+                <li>
+                  <code>makeDamage(enemyShip)</code> &ndash; zadaje obrażenia statkowi podanemu w argumencie (o wartość zmiennej <code>strength</code>)
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          klasę <code>RebelShip</code> dziedziczącą po <code>Ship</code>:
+          <ul>
+            <li>
+              niech konstruktor przyjmuje parametry: <code>position</code>, <code>strength</code>, <code>health</code>.
+            </li>
+            <li>
+              wartość <code>faction</code> powinna być na stałe ustawiona jako 'Rebel Alliance'.
+            </li>
+            <li>
+              zdefiniuj funkcję dla klasy <code>RebelShip</code>:
+              <ul>
+                <li>
+                  <code>hyperspeed()</code> &ndash; ustawia wartość <code>position</code> na <code>undefined</code>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          klasę <code>DeathStar</code> dziedziczącą po <code>Ship</code>
+          <ul>
+            <li>niech konstruktor przyjmuje parametr: <code>position</code></li>
+            <li>
+              niech <code>faction</code> będzie ustawiony na stałe na 'Empire'.
+            </li>
+            <li>
+              niech klasa zawiera następujące pola: <code>deathRayAvailable</code>
+            </li>
+            <li>
+              zawierającą funkcje:
+              <ul>
+                <li>
+                  <code>makeDamage(enemyShip)</code> &ndash; jeśli <code>deathRayAvailable</code> jest ustawione na <code>true</code>, to wywołuje funkcje odziedziczoną po <code>Ship</code>, a następnie ustawia <code>deathRay</code> na niedostępny na ustaloną liczbę sekund. Jeśli <code>deathRayAvailable</code> jest równe <code>false</code>, drukuje komunikat.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ol>
+      <p>W razie potrzeby można zadeklarować zmienne i funkcje pomocnicze w klasie <code>DeathStar</code>.</p>
+      <pre>
+<span class="c">// Przykładowy output:</span>
+
+utworzonyVector.toString(); 
+<span class="c">// x: 3 y: 4</span>
+utworzonyVector.add(drugiVector);
+utworzonyVector.toString(); 
+<span class="c">// x: 5 y: 7</span>
+        
+gwiazdaSmierci.makeDamage(statekRebeli);
+<span class="c">// Statek Rebelii otrzymał obrażenia równe: 10</span>
+<span class="c">// Statek Rebelii został zniszczony</span>
+
+gwiazdaSmierci.makeDamage(statekRebeli).catch(error => console.log(error)); 
+<span class="c">// Promień gwiazdy śmierci jest niedostepny</span>
+        
+<span class="c">// Powinna być również możliwość wywołania gwiazdaSmierci.makeDamage() dwa razy</span></pre>
+    </li>
+  </ol>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="Lab13">
+        <button class="collapsed btn btn-link" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="contentLab13" data-target="#contentLab13">
+          <h6 class="mb-0">
+            Laboratorium 13 &ndash; Asynchroniczoność cd. <i class="fas fa-angle-down rotate-icon"></i>
+          </h6>
+        </button>
+      </div>
+      <div id="contentLab13" class="collapse" aria-labelledby="Lab13">
+        <div class="card-body">
+          <div class="lab-content">
+  <!-- <p>
+    Przykład z callbackami i promise'ami:
+    <a href="jp2/example.js" download="example.js"><code>example.js</code></a>
+  </p> -->
+  <div class="alert alert-secondary" role="alert">
+    W poniższych zadaniach <strong>nie</strong> używaj mechanizmu <em>async/await</em>!
+  </div>
+  <ol>
+    <li>
+      Napisz funkcję (nie korzystając z mechanizmu async/await ani Promise'ów): <pre>const poKolei = (fun1, fun2, cb) => { ... };</pre> taką, że:
+      <ul>
+          <li>
+            jej dwoma pierwszymi argumentami są funkcje asynchroniczne – możesz założyć, że funkcje te muszą być przygotowane na przyjęcie określonej listy argumentów, z których korzystać będzie <code>poKolei</code>
+          </li>
+          <li>
+            funkcja <code>poKolei</code> powinna zapewnić, że <code>fun2</code> wykona się zawsze po <code>fun1</code>, a wyniki wygenerowane przez <code>fun1</code> zostaną przekazane do <code>fun2</code>.
+          </li>
+          <li>
+            trzecim argumentem jest „callback” <code>cb</code>, czyli funkcja, której zadaniem jest przetworzenie wyników zwracanych przez <code>fun2</code>
+          </li>
+      </ul>
+    </li>
+    <li>
+      Napisz funkcję (nie korzystając z mechanizmu async/await ani Promise'ów): <pre>const razem = (fun1, fun2, cb) => { ... };</pre> taką, że: 
+      <ul>
+        <li>
+          jej dwoma pierwszymi argumentami są funkcje asynchroniczne – ponownie możesz założyć, że funkcje te muszą być przygotowane na przyjęcie określonej listy argumentów, z których korzystać będzie <code>razem</code>
+        </li>
+        <li>
+          funkcja <code>razem</code> powinna zapewnić, że <code>fun1</code> oraz <code>fun2</code> będą wykonywać się „równolegle”, a wyniki przez nie wygenerowane zostaną przekazane – jako tablica [wynik1, wynik2] do funkcji cb.
+        </li>
+        <li>
+          trzecim argumentem jest „callback” <code>cb</code>, czyli funkcja, której zadaniem jest przetworzenie wyników zwróconych przez <code>fun1</code> i <code>fun2</code>.
+        </li>
+      </ul>
+  </li>
+    <li>
+      Napisz funkcję: <pre>const grupuj = (funTab1, funTab2, cb) => { ... };</pre> spełaniającą poniższe warunki:
+      <ul>
+        <li>Dwoma pierwszymi argumentami funkcji grupuj są tablice funkcji asynchronicznych zwracające wartość liczbową.</li>
+        <li>Funkcja <code>grupuj</code> powinna zapewnić, że wszystkie funkcje z obu tablic będą wykonywać się „równolegle”.</li>
+        <li>Funkcja <code>grupuj</code> powinna wywoływać funkcję <code>cb</code>, która przyjmuje jako parametr pogrupowane wyniki z wszystkich funkcji w&nbsp;formacie:
+        <pre>
+[
+  [ wynik_funkcji_1_z_funTab1, wynik_funkcji_1_z_funTab2 ],
+  [ wynik_funkcji_2_z_funTab1, wynik_funkcji_2_z_funTab2 ],
+  [ wynik_funkcji_3_z_funTab1, wynik_funkcji_3_z_funTab2 ],
+  [ wynik_funkcji_4_z_funTab1, wynik_funkcji_4_z_funTab2 ],
+  [ wynik_funkcji_5_z_funTab1, wynik_funkcji_5_z_funTab2 ],
+  <span class="c">// ...</span>
+]</pre> i drukuje je w konsoli w dowolny sposób.
+        </li>
+        <li>
+          Jeżeli liczba funkcji w obu tablicach nie jest równa, to funkcja grupuj powinna uzupełniać brakujące wyniki wartością 0.
+        </li>
+      </ul>
+      <!-- <button class="btn btn-link btn-sm" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+        Podpowiedź
+      </button>
+      
+      <div class="collapse" id="collapse4">
+        <strong>Podpowiedź:</strong> Wykonujemy na raz promise'y z dwóch tablic. Dzięki temu mamy już zebrane wszystkie wyniki, które należy tylko pogrupować.
+<pre>const grupuj = (funTab1, funTab2, cb) => {
+  Promise.all([Promise.all(funTab1), Promise.all(funTab2)]).then((res) => { ... })
+};</pre>
+      </div> -->
+    </li>
+    <li>
+      Napisz funkcję: <pre>const connect = (funTab, fun) => { ... };</pre> spełaniającą poniższe warunki:
+      <ul>
+        <li>Pierwszym argumentem funkcji <code>connect</code> jest tablica funkcji asynchronicznych, zwracających wartość liczbową.</li>
+        <li>Drugim argumentem <code>connect</code> jest funkcja asynchroniczna, której jedynym argumentem jest wartość liczbowa, a wynikiem również wartość liczbowa.</li>
+        <li>Funkcja <code>connect</code> powinna zapewnić, że wszystkie funkcje przekazane w parametrze <code>funTab</code> będą wykonywać się „równolegle”.</li>
+        <li>Funkcja <code>connect</code> powinna zwracać pogrupowane wyniki w formacie:
+          <pre>
+[
+  [ wyn_1, fun(wyn_1) ],
+  [ wyn_2, fun(wyn_2) ],
+  [ wyn_3, fun(wyn_3) ],
+  [ wyn_4, fun(wyn_4) ],
+  [ wyn_5, fun(wyn_5) ],
+  <span class="c">// ....</span>
+]</pre>
+          gdzie <code>wyn_i</code> oznacza <code>funTab[i]()</code>. 
+        </li>
+      </ul>
+    </li>
+    <li>
+      Nie korzystając z <code>Promise.all</code> uzupełnij funkcję <code>razem</code>, która przyjmuje tablicę promise'ów. Funkcja ta ma uruchamiać wszystkie promisy równolegle i po wykonaniu wszystkich, uruchomić funkcję, która została przekazana jako callback.
+      <pre>
+razem(promisesTab, callback) {
+  <span class="c">// ...</span>
+}</pre>
+    </li>
+  </ol>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="Lab14">
+        <button class="collapsed btn btn-link" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="contentLab14" data-target="#contentLab14">
+          <h6 class="mb-0">
+            Laboratorium 14 &ndash; Kolokwium 2 (07.06.2023) + zadania dodatkowe <i class="fas fa-angle-down rotate-icon"></i>
+          </h6>
+        </button>
+      </div>
+      <div id="contentLab14" class="collapse" aria-labelledby="Lab14">
+        <div class="card-body">
+          <p>
+            Termin kolokwium: <strong>środa, 07.06.2023</strong><br>
+            godz. 16:00, s. 3.04
+          </p>
+          <hr>
+<p>
+  <strong>Przed kolokwium...</strong>
+</p>
+<p>
+  utwórz prosty projekt node'owy, a następnie skonfiguruj go tak, aby:
+</p>
+<ul>
+  <li>komenda <code>yarn zad1</code> uruchomiła skrypt zawierający rozwiązanie zadania 1.</li>
+  <li>komenda <code>yarn zad2</code> uruchomiła skrypt zawierający rozwiązanie zadania 2.</li>
+</ul>
+<p>
+  Następnie dodaj do projektu bibliotekę <code>axios</code> lub <code>fetch</code>. Do projektu możesz dodać również narzędzia poznane podczas zajęć pod warunkiem, że zostaną wykorzystane i ich użycie ma sens.
+</p>          <hr>
+<p>
+  Materiał obowiązujący na kolokwium: 
+  <ul>
+    <li>setTimeout, setInterval</li>
+    <li>Promises</li>
+    <li>Callbacks</li>
+    <li>+ może się pojawić materiał z pierwszego kolokwium</li>
+  </ul>
+</p>          <hr>
+<div class="lab-content">
+  <p>
+    <u>Zadania dodatkowe</u>
+  </p>
+  <ol>
+    <li>
+      Wykorzystując asynchroniczną funkcję <code>getNum</code> (używającą pomocniczej funkcji <code>getRand</code>):
+      <pre>
+const getRand = () => {
+  return Math.floor(Math.random() * 1000);
+};
+
+const getNum = (cb) => {
+  setTimeout(() => {
+    cb(getRand());
+  }, getRand() * 5);
+};</pre> 
+      zdefiniuj funkcje, która równolegle uruchamia <code>dim</code>-kopii funkcji <code>getNum</code>, a otrzymane wyniki (liczby) sortuje malejąco i tak otrzymaną tablicę zwraca jako wynik końcowy.
+<pre>
+const asyncSort = (dim) => {
+  <span class="c">// ...</span>
+};
+</pre>
+      W rozwiązaniu nie używaj mechanizmu async/await ani Promise'ów.
+    </li>
+    <li>
+      <em>(poprawa kolokwium 2021)</em>
+      Napisz funkcję: <pre>const razemTab = (funTab, cb) => { ... };</pre> taką, że:
+      <ul>
+        <li>pierwszym argumentem jest tablica funkcji asynchronicznych</li>
+        <li>funkcja <code>razemTab</code> powinna zapewnić, że wszystkie funkcje będą wykonywać się „równolegle”, a wyniki przez nie wygenerowane zostaną przekazane – jako tablica <code>[wynik1, wynik2, ...]</code> do funkcji <code>cb</code>. </li>
+        <li>drugim argumentem jest „callback” <code>cb</code>, czyli funkcja, której zadaniem jest przetworzenie wyników zwróconych przez funkcje.</li>
+      </ul>
+    </li>
+    <li>
+      <em>(kolokwium 2021)</em>
+      Napisz funkcję: <pre>const poKolei = (funTab, cb) => (n) => { ... };</pre> taką, że:
+      <ul>
+        <li>pierwszym argumentem jest tablica funkcji asynchronicznych – załóż, że funkcje te muszą być przygotowane na przyjęcie argumentu <code>n</code>, z którego korzysta funkcja <code>poKolei</code></li>
+        <li>funkcja <code>poKolei</code> powinna zapewnić, że następna funkcja np. <code>fun2</code> wykona się zawsze po poprzedniej np. <code>fun1</code>, a wyniki wygenerowane przez <code>fun1</code> zostaną przekazane do <code>fun2</code>.</li>
+        <li>trzecim argumentem jest „callback” <code>cb</code>, czyli funkcja, której zadaniem jest przetworzenie wyników zwracanych przez ostatnią funkcję w tablicy</li>
+      </ul>
+    </li>
+    <li>
+      <em>(poprawa kolokwium 2022)</em>
+      Dokończ poniższy fragment kodu opisujący flow pobierania danych dla zalogowanego użytkownika (posiadającego losowo wygenerowane id po zalogowaniu):
+
+<pre>
+class AccountService {
+  authenticated = false;
+
+  idUser = Math.floor(Math.random() * 10);
+
+  user = null;
+
+  constructor() {}
+
+  <span class="c">// Pobieranie liczby sekund, po jakiej użytkownik powinien zostać zalogowany</span>
+  getRandomLoginTime() {
+    return (Math.floor(Math.random() * 10) % 5) + 5;
+  }
+}
+</pre>
+      tak, aby spełniał poniższe wymagania:
+      <ul>
+        <li>
+          Funkcja <code>isAuthorizated</code> powinna po upływie jednej sekundy "zwracać" informację, czy użytkownik jest aktualnie zalogowany (czy nie) &ndash; flaga <code>authenticated</code>.
+        </li>
+        <li>
+          Funkcja <code>checkIsUserLogin</code> powinna, co sekundę sprawdzać (do momentu, aż uzyska informacje pozytywną), czy użytkownik jest zalogowany. W&nbsp;zależności od rezultatu powinien zostać wyświetlony odpowiedni komunikat: "Użytkownik nie jest zalogowany" / "Użytkownik jest zalogowany". (Funkcja zostaje wywołana na samym początku działania programu, wykorzystuje implementacje <code>isAuthorizated</code>).
+        </li>
+        <li>
+          Funkcja <code>loginUser</code> po upływie <code>getRandomLoginTime()</code> sekund powinna zmieniać status użytkownika na zalogowany (<code>authenticated</code>). Po zmianie statusu powinien zostać wyświetlony w konsoli komunikat "Użytkownik został zalogowany".
+        </li>
+        <li>
+          Funkcja <code>getUserDetails</code> &ndash; w momencie, kiedy dostaniemy informacje, że użytkownik jest zalogowany, pobieramy informacje o zalogowanym użytkowniku 
+          <pre>GET https://jsonplaceholder.typicode.com/users/{idUser}</pre>
+          Po pobraniu danych powinna zostać wyświetlona w konsoli informacja o zalogowanym użytkowniku: "Zostałeś zalogowany jako: { name }"
+        </li>
+        <li>
+          Funkcja <code>getData</code> pobierze wszystkie posty 
+          <pre>GET https://jsonplaceholder.typicode.com/posts</pre>
+          a następnie tylko dla postów zalogowanego użytkownika 
+          <pre>GET https://jsonplaceholder.typicode.com/posts/{idPost}/comments</pre>
+          pobierze "równolegle" wszystkie komentarze do pobranych postów. Kiedy wszystkie komentarze zostaną pobrane, powinien zostać wyświetlony komunikat w konsoli "Pobrano wpisy i komentarze użytkownika: { name }"</li>
+        <li>
+          Cały program powinien się wykonać (zalogowanie, pobieranie danych użytkownika) po wywołaniu funkcji <code>start</code> (zachowując wyżej opisane flow).
+        </li>
+      </ul>
+      <pre>
+<span class="c">// Wynik w konsoli, po wywołaniu funkcji start</span>
+
+Użytkownik nie jest zalogowany
+Użytkownik nie jest zalogowany
+Użytkownik nie jest zalogowany
+Użytkownik nie jest zalogowany
+Użytkownik został zalogowany
+Użytkownik jest zalogowany
+Zostałeś zalogowany jako: Leanne Graham
+Pobrano wpisy i komentarze użytkownika: Leanne Graham
+</pre>
+    </li>
+  </ol>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-5">
+    <h4 class="mb-4">Materiały</h4>
+    <ul>
+      <li>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">Mozilla Developers Network</a>
+      </li>
+      <li>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank" rel="noopener noreferrer">MDN Array</a>
+      </li>
+      <li>
+        <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">Node.js</a>
+      </li>
+      <li>
+        <a href="https://yarnpkg.com/" target="_blank" rel="noopener noreferrer">Yarn</a>
+      </li>
+      <li>
+        <a href="https://eslint.org/" target="_blank" rel="noopener noreferrer">ESLint</a>
+      </li>
+      <li>
+        <a href="https://lodash.com/" target="_blank" rel="noopener noreferrer">Lodash</a>
+      </li>
+      <li>
+        <a href="https://github.com/lodash/lodash/wiki/FP-Guide" target="_blank" rel="noopener noreferrer">Lodash FG Guide</a>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</body>
+
+</html>
